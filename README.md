@@ -30,9 +30,10 @@
 
 | Download | Use it for |
 | :--- | :--- |
-| **[Eclipse Animator Open.rbxm](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest/download/Eclipse%20Animator%20Open.rbxm)** | installing the plugin (drop it in your Studio `Plugins` folder) |
-| **[Eclipse Animator Open.rbxmx](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest/download/Eclipse%20Animator%20Open.rbxmx)** | reading and editing the whole plugin in VS Code or any text editor |
-| **[Latest release](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest)** | both files plus the complete source archive in one zip, with checksums |
+| **[Eclipse Animator Open.rbxm](https://github.com/7kg2-here/Eclipse-Animator-free/blob/main/Eclipse%20Animator%20Open.rbxm)** | installing the plugin (drop it in your Studio `Plugins` folder) |
+| **[Eclipse Animator Open.rbxmx](https://github.com/7kg2-here/Eclipse-Animator-free/blob/main/Eclipse%20Animator%20Open.rbxmx)** | reading and editing the whole plugin in VS Code or any text editor |
+| **[Latest release](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest)** | release notes and SHA-256 checksums |
+| **Repository → Code → Download ZIP** | everything at once: plugin, source tree and tools |
 
 Both plugin files do the same thing — Studio opens `.rbxm` and `.rbxmx` alike.
 
