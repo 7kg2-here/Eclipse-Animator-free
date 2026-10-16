@@ -1,236 +1,256 @@
-# Eclipse Animator
+<div align="center">
 
-**A next-generation animation suite for Roblox Studio — built for animators who outgrew the basics.**
+<img src="assets/logo.svg" width="160" alt="Eclipse Animator logo" />
 
-![Platform](https://img.shields.io/badge/Platform-Roblox%20Studio-blue?style=for-the-badge)
-![Built With](https://img.shields.io/badge/Built%20With-Luau-00A2FF?style=for-the-badge)
-![Type](https://img.shields.io/badge/Type-Animation%20Plugin-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Pre--Paid%20Build-purple?style=for-the-badge)
-![Price](https://img.shields.io/badge/Price-Free-success?style=for-the-badge)
+# Eclipse Animator — Free Release
 
----
+**A complete animation suite for Roblox Studio. Timeline, IK/FK, physics simulation, collaboration and export — in one local plugin.**
 
-> ### About this repository
->
-> This repository hosts the **Eclipse Animator build that was published before the plugin became a paid product.**
->
-> It is preserved here in the exact state it existed in when it was still freely available: one `.rbxm` plugin file, no license server, no account checks, no microtransactions. Everything loads straight into Roblox Studio and works out of the box.
->
-> The goal of this repository is simple — keep the original free release accessible to the animation community that helped the project grow in the first place.
+[![GitHub Release](https://img.shields.io/github/v/release/7kg2-here/Eclipse-Animator-free?style=for-the-badge&label=Download)](https://github.com/7kg2-here/Eclipse-Animator-free/releases)
+[![Stars](https://img.shields.io/github/stars/7kg2-here/Eclipse-Animator-free?style=for-the-badge)](https://github.com/7kg2-here/Eclipse-Animator-free/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/7kg2-here/Eclipse-Animator-free?style=for-the-badge)](https://github.com/7kg2-here/Eclipse-Animator-free/commits/main)
+[![Platform](https://img.shields.io/badge/Platform-Roblox_Studio-blue?style=for-the-badge)](https://www.roblox.com/create)
+[![License](https://img.shields.io/badge/License-Free_for_community-green?style=for-the-badge)](#license-and-disclaimer)
+
+**[Download from Releases](https://github.com/7kg2-here/Eclipse-Animator-free/releases) — no key, no login, no payment.**
+
+*This repository preserves the last free build of Eclipse Animator, exactly as it was before the plugin became a paid product.*
+
+</div>
 
 ---
 
 ## Table of Contents
 
-- [About Eclipse Animator](#about-eclipse-animator)
-- [Plugin at a Glance](#plugin-at-a-glance)
-- [Features](#features)
-- [Installation](#installation)
+- [About This Repository](#about-this-repository)
+- [Download in 1 Minute](#download-in-1-minute)
+- [Install on Windows](#install-on-windows)
+- [Install on macOS](#install-on-macos)
+- [Install on Linux](#install-on-linux)
+- [Verify the Install](#verify-the-install)
 - [Quick Start](#quick-start)
-- [Core Concepts](#core-concepts)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-- [Compatibility and Requirements](#compatibility-and-requirements)
+- [Features](#features)
+- [Compatibility](#compatibility)
 - [Repository Contents](#repository-contents)
-- [Changelog](#changelog)
-- [Frequently Asked Questions](#frequently-asked-questions)
+- [FAQ](#faq)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License and Disclaimer](#license-and-disclaimer)
 
 ---
 
-## About Eclipse Animator
+## About This Repository
 
-**Eclipse Animator** is a full-featured animation plugin for Roblox Studio. It was designed as a serious alternative to the tools animators had been forced to choose between: timeline plugins that feel too limited, and external 3D software with a steep learning curve and a painful round-trip back into Studio.
+Eclipse Animator is a full animation and rigging plugin for Roblox Studio. It was built as an alternative to limited timeline plugins on one side, and heavy external 3D software on the other.
 
-It brings the workflow animators actually want into one window:
+This repository contains the **pre-paid build**:
 
-- A timeline that behaves like a real editor.
-- Rigging controls that support both Inverse and Forward Kinematics.
-- Physics that can be simulated directly in the viewport.
-- Collaborative editing inside Team Create.
-- Export paths that take your animation from the timeline all the way into a shipped game.
+- One `.rbxmx` plugin file, ready to install.
+- No license server.
+- No account checks.
+- No key system.
+- Works offline inside Roblox Studio once installed.
 
-Whether you are making combat animations, cinematics, cutscenes, emotes, or full character performances, Eclipse Animator is built to handle the entire pipeline without leaving Roblox Studio.
+Later development of Eclipse Animator continued as a paid product. That newer work is **not** included here. This repo is frozen at the last free state, kept available for the animation community.
 
----
-
-## Plugin at a Glance
-
-| Item | Details |
-| :--- | :--- |
-| **Name** | Eclipse Animator |
-| **Category** | Animation and rigging plugin |
-| **Host application** | Roblox Studio |
-| **Language** | Luau |
-| **Distribution format** | `.rbxm` model file (local plugin) |
-| **Interface** | Dockable viewport-anchored suite with a full timeline and curve editor |
-| **Primary use cases** | Character animation, combat, emotes, cutscenes, cinematic work |
-| **Supported rigs** | R6, R15, custom and imported rigs |
-| **Collaboration** | Live editing in Team Create sessions |
-| **Build in this repository** | Pre-paid release — fully free, no gating, no key system |
-| **Current upstream status** | Continued development as a paid product |
+Author of the plugin code: `riftkuro` (see file header inside the `.rbxmx`).
 
 ---
 
-## Features
+## Download in 1 Minute
 
-### Animation and Timeline
+For anyone who just wants the file:
 
-- **Professional timeline editor** with frame-accurate scrubbing, multi-track layers, and instant playback.
-- **Bezier and multi-mode easing** for every keyframe — shape motion instead of settling for linear.
-- **Graph and curve editing** so you can tune ease-in, ease-out, overshoot, and snap precisely.
-- **Pose system** for storing, reusing, and blending poses across an animation.
-- **Keyframe manipulation tools** — move, scale, mirror, and retime selected ranges in bulk.
-- **Copy and paste between track layers** to build complex sequences fast.
+1. Open the Releases page:
+   **https://github.com/7kg2-here/Eclipse-Animator-free/releases**
+2. Open the latest release (for example `v1.0957-free`).
+3. Under **Assets**, download the file:
+   `Eclipse-Animator-inspect.rbxmx`
+4. Follow the install steps for your system below.
 
-### Rigging and Motion Control
+Direct links:
 
-- **Toggleable IK and FK** — lock a hand, foot, or head in space with Inverse Kinematics, then switch back to Forward Kinematics mid-timeline without breaking your keys.
-- **Custom rig support** — works with non-standard skeletons, not just default character rigs.
-- **Dynamic parenting** — keyframe an object's parent so a weapon can follow a hand during a fight and detach a moment later.
-- **Character and prop handling** in a single scene, so deformation and weapon motion stay in sync.
-- **Blender rig import** — bring skeletons from Blender into Studio as usable Roblox rigs.
+- All releases: https://github.com/7kg2-here/Eclipse-Animator-free/releases
+- Repository files: https://github.com/7kg2-here/Eclipse-Animator-free
 
-### Physics and Simulation
-
-- **Viewport physics simulation** — animate the throw, hit Simulate, and let physics resolve the ragdoll, impact, or flying prop.
-- **Hybrid workflows** — combine hand-authored keyframes with simulated motion in the same timeline.
-- **Stable playback** — preview results without leaving the editor or duplicating your scene.
-
-### Collaboration and Team Workflow
-
-- **Live Team Create collaboration** — multiple animators can work on the same animation file at the same time.
-- **Shared sessions** — review, adjust, and hand off shots without exporting files back and forth.
-- **Studio-native** — nothing to install outside Roblox Studio.
-
-### Productivity and Reliability
-
-- **Crash recovery** — background timeline snapshots let you restore your session after an unexpected crash.
-- **Picture-in-picture camera preview** — watch your camera shot in a small window while the timeline stays full size.
-- **Pose and audio asset library** — a built-in library of reusable poses and audio clips.
-- **Grease pencil sketching** — sketch over the viewport to plan motion and timing before committing to keys.
-- **Fully customizable keybinds** — remap the entire workflow to match how you animate.
-- **Customizable interface** — dock, resize, and reorganize panels to fit your screen.
-
-### Export and In-Game Playback
-
-- **Animation export** ready for use in your games.
-- **ModuleScript exporter** to move authored motion into scriptable, reusable modules.
-- **Unparented animation support** for effects, props, and rigs that do not follow the standard character hierarchy.
-- **Optimized output** that stays clean when it reaches runtime.
-
-### Rendering and Cinematic Effects
-
-- **Camera shake presets** for impact-driven action.
-- **Impact frames** for stylized hits and combat readability.
-- **Cinematic helpers** for cutscene framing and shot control.
+If you downloaded the repo as ZIP instead, unzip it first and use the same `.rbxmx` file inside.
 
 ---
 
-## Installation
+## Install on Windows
 
-Eclipse Animator ships as a single `.rbxm` file and installs as a **local plugin** in Roblox Studio. There is no key system, no login, and no dependency on any external service.
+Recommended method: local Plugins folder.
 
-### Method 1 — Local plugin folder (recommended)
-
-1. Download the `.rbxm` file from this repository.
-2. Open your Roblox Studio plugins folder:
-
-   **Windows**
-
+1. Download `Eclipse-Animator-inspect.rbxmx` from Releases.
+2. Press `Win + R`, type:
    ```
    %LOCALAPPDATA%\Roblox\Plugins
    ```
+   Press Enter. Create the `Plugins` folder if it does not exist.
+3. Copy the `.rbxmx` file into that folder.
+4. Close Roblox Studio completely if it is open, then open it again.
+5. Open any place, go to the **Plugins** tab in the top ribbon. Eclipse Animator should appear there.
 
-   **macOS**
+Alternative method: Insert from File.
 
+1. Open Roblox Studio with any place.
+2. Right-click **Workspace** or **ServerStorage** in Explorer.
+3. Choose **Insert from File**, select the `.rbxmx`.
+4. Right-click the inserted object, choose **Save as Local Plugin**.
+5. Restart Studio.
+
+---
+
+## Install on macOS
+
+1. Download `Eclipse-Animator-inspect.rbxmx` from Releases.
+2. Open Finder, go to:
    ```
    ~/Documents/Roblox/Plugins
    ```
+   If the `Plugins` folder does not exist, create it:
+   `Documents / Roblox / Plugins`
+3. Copy the `.rbxmx` file into that folder.
+4. Quit Roblox Studio completely (`Cmd + Q`), then open it again.
+5. Open any place, go to the **Plugins** tab. Eclipse Animator should appear there.
 
-   If the `Plugins` folder does not exist, create it manually.
+If macOS blocks the file because it came from the internet:
 
-3. Copy the `.rbxm` file into that folder.
-4. Restart Roblox Studio completely.
-5. Eclipse Animator appears in the **Plugins** tab of the ribbon.
+1. Right-click the file in Finder, choose **Open**. Or go to **System Settings / Privacy and Security** and allow it.
+2. Restart Studio once more.
 
-<!-- If your .rbxm file has a different name, update the steps above to match the file you actually ship in this repository. -->
+---
 
-### Method 2 — Insert from file
+## Install on Linux
 
-1. Open Roblox Studio with any place file.
-2. Right-click **Workspace** or **ServerStorage** in the Explorer.
-3. Choose **Insert from File...** and select the `.rbxm`.
-4. Right-click the inserted object and choose **Save as Local Plugin**.
+Roblox Studio has **no official native Linux build**. The plugin itself is the same file, but you first need a working Studio installation. Two practical options:
 
-This method is useful when you want to inspect the plugin contents before installing it, or when you are setting up a temporary testing environment.
+**Option A — Vinegar / Bottles with Wine (community workaround)**
 
-### Verifying the install
+1. Install Roblox Studio through [Vinegar](https://vinegarhq.org/) or Bottles with Wine. Follow that project's own install guide for your distro.
+2. Download `Eclipse-Animator-inspect.rbxmx` from the Releases page.
+3. Locate the Wine prefix Studio uses for plugins. This varies by setup, typically something like:
+   ```
+   ~/.local/share/vinegar/prefixes/studio/drive_c/users/<you>/AppData/Local/Roblox/Plugins
+   ```
+   Check Vinegar / Bottles documentation for the exact path on your version.
+4. Copy the `.rbxmx` into that `Plugins` folder.
+5. Restart Studio through Vinegar / Bottles.
 
-After installation, open the Plugins tab in Studio's ribbon. The Eclipse Animator button should be present and open its main window when clicked.
+**Option B — Windows virtual machine**
+
+1. Run Windows in VirtualBox, VMware, or QEMU/KVM.
+2. Inside Windows, follow the [Windows install steps](#install-on-windows).
+
+Stability on Linux depends on Wine and your distro. If animation playback is unstable there, use Windows or macOS for production work.
+
+---
+
+## Verify the Install
+
+1. Open Roblox Studio.
+2. Open any Baseplate or existing place.
+3. Click the **Plugins** tab.
+4. Click **Eclipse Animator**.
+5. The main window with timeline should open.
+
+If the button is missing, see [Troubleshooting](#troubleshooting).
 
 ---
 
 ## Quick Start
 
-1. **Prepare a rig.** Place a character model — R6, R15, or a custom rig — into the workspace.
-2. **Launch Eclipse Animator** from the Plugins tab.
-3. **Select your rig** in the plugin window to bind it to the timeline.
-4. **Create a new animation** and give it a name.
-5. **Pose your rig** in the viewport, then set keyframes at the current frame.
-6. **Move the playhead** and repeat to build the sequence.
-7. **Shape the motion** with easing curves and the graph editor.
-8. **Preview the result** in the viewport or through the picture-in-picture camera.
-9. **Export the animation**, or use the ModuleScript exporter for scriptable playback.
+1. Insert a rig into Workspace: R6, R15, or a custom rig.
+2. Open Eclipse Animator from the Plugins tab.
+3. Select your rig in the plugin window to bind it.
+4. Create a new animation and name it.
+5. Pose the rig in the viewport, move the playhead, set a keyframe (`K` by default).
+6. Repeat to build the sequence.
+7. Adjust easing in the graph / curve editor.
+8. Preview in the viewport or picture-in-picture camera.
+9. Export the animation for your game, or use the ModuleScript exporter for scripted playback.
 
 ---
 
-## Core Concepts
+## Features
 
-| Concept | What it means |
-| :--- | :--- |
-| **Timeline** | The primary workspace where frames, tracks, and keyframes live. |
-| **Track layer** | A row in the timeline that holds keyframes for one rig component or object. |
-| **Keyframe** | A stored pose or value at a specific frame. |
-| **Easing / Bezier** | The interpolation curve that controls how motion travels between two keyframes. |
-| **IK** | Inverse Kinematics — position the end of a limb and let the chain solve itself. |
-| **FK** | Forward Kinematics — rotate joints directly, one link at a time. |
-| **Dynamic parenting** | Parent relationships that can change over the course of an animation. |
-| **Simulation** | Physics-driven motion applied on top of or instead of keyframed motion. |
-| **Snapshot** | A background save of timeline state used for crash recovery. |
+### Timeline and Keyframes
 
----
+- Frame-accurate scrubbing and multi-track layers.
+- Move, scale, mirror, and retime selections in bulk.
+- Copy and paste across tracks.
+- Pose library for storing and reusing poses.
 
-## Keyboard Shortcuts
+### Easing and Curves
 
-The default bindings are listed below, and every one of them can be remapped from the plugin's settings panel.
+- Bezier and multi-mode easing per keyframe.
+- Graph editor for ease-in, ease-out, overshoot, and snap control.
 
-| Action | Default binding |
+### Rigging
+
+- Toggleable IK and FK. Lock hands, feet, or head in space, then switch back mid-timeline.
+- R6, R15, custom skeletons, and Blender-imported rigs.
+- Dynamic parenting: keyframe a weapon to follow a hand, then detach it later.
+- Character and prop animation in the same scene.
+
+### Physics
+
+- Viewport physics simulation for throws, ragdolls, impacts, and props.
+- Mix hand-authored keys with simulated motion.
+- Preview without leaving the editor.
+
+### Collaboration
+
+- Live editing in Team Create sessions.
+- Shared review and handoff without passing files back and forth.
+
+### Reliability
+
+- Background timeline snapshots for crash recovery.
+- Picture-in-picture camera preview.
+- Built-in pose and audio library.
+- Grease-pencil viewport sketching for planning.
+- Fully remappable keybinds and dockable layout.
+
+### Export
+
+- Animation export for in-game use.
+- ModuleScript exporter for scriptable, reusable motion.
+- Support for unparented effects, props, and non-standard hierarchies.
+
+### Cinematics
+
+- Camera shake presets.
+- Impact frames for combat readability.
+- Cutscene framing helpers.
+
+Default shortcuts:
+
+| Action | Default |
 | :--- | :--- |
 | Play / Pause | `Space` |
 | Next frame | `Right Arrow` |
 | Previous frame | `Left Arrow` |
 | Set keyframe | `K` |
 | Delete keyframe | `Delete` |
-| Toggle IK / FK | Configurable in settings |
-| Simulate physics | Configurable in settings |
-| Toggle camera preview | Configurable in settings |
+| IK / FK, Simulate, Camera preview | Configurable in plugin settings |
 
-<!-- Confirm each default binding against your build before publishing, and adjust the table if it differs. -->
+Confirm bindings in the plugin settings panel, as they can be remapped.
 
 ---
 
-## Compatibility and Requirements
+## Compatibility
 
 | Requirement | Details |
 | :--- | :--- |
-| **Roblox Studio** | Current release channel recommended |
-| **Operating system** | Windows and macOS |
-| **Rig support** | R6, R15, custom rigs, imported Blender rigs |
-| **Team Create** | Supported for live collaborative editing |
-| **External dependencies** | None |
-| **Account requirements** | None — the plugin runs entirely inside Studio |
+| Roblox Studio | Current release channel recommended |
+| Windows | 10 / 11, 64-bit, supported |
+| macOS | Current Studio-supported versions, supported |
+| Linux | No native Studio build. Community workaround via Wine / Vinegar / Bottles only |
+| Rigs | R6, R15, custom rigs, Blender-imported rigs |
+| Team Create | Supported |
+| Internet | Only needed to download the file. The plugin runs locally after install |
+| Dependencies | None |
 
 ---
 
@@ -238,124 +258,113 @@ The default bindings are listed below, and every one of them can be remapped fro
 
 ```
 .
-├── EclipseAnimator.rbxm     # The plugin file — install this
-├── README.md                # This documentation
-└── LICENSE                  # Usage terms
+├── assets/
+│   └── logo.svg                        # Logo used at the top of this README
+├── Eclipse-Animator-inspect.rbxmx      # The plugin file. Install this.
+├── README.md                           # This documentation
+├── LICENSE                            # Usage terms
+├── CONTRIBUTING.md                     # How to report bugs and propose changes
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │   ├── bug_report.yml
+    │   └── feature_request.yml
+    ├── PULL_REQUEST_TEMPLATE.md
+    └── workflows/
+        └── validate.yml
 ```
 
-<!--
-Replace the tree above with your real file names and folders.
-If you also ship screenshots, add a screenshots/ or assets/ folder and list it here.
--->
+File size note: the `.rbxmx` is about 11 MB and contains the full plugin source in Luau.
 
 ---
 
-## Changelog
+## FAQ
 
-### Pre-paid release (this repository)
+**Is this the latest Eclipse Animator?**
 
-- Published as the original free release of Eclipse Animator.
-- Includes the full animation suite: timeline, IK/FK, physics simulation, collaboration, crash recovery, exporters, and render effects.
-- No license checks, no account binding, no paid tier restrictions.
+No. This is the last free build before the paid transition. It is preserved as-is.
 
-### Later development
+**Does it need a key or payment?**
 
-Following this release, Eclipse Animator continued development as a paid product. Newer upstream versions are not part of this repository.
+No. No key, no login, no activation.
 
----
+**Can I use it for my game, videos, and commissions?**
 
-## Frequently Asked Questions
+Yes, for your own projects. See [License](#license-and-disclaimer). You may not resell the plugin itself or put it behind a paywall.
 
-<details>
-<summary><strong>Is this the latest version of Eclipse Animator?</strong></summary>
+**Does it work with custom rigs?**
 
-No. This repository contains the build that was published before the plugin became a paid product. It is frozen at that point in development and does not include anything added afterward.
-</details>
+Yes. R6, R15, custom skeletons, and Blender-imported rigs are supported.
 
-<details>
-<summary><strong>Does this build require a license key or payment?</strong></summary>
+**Does it work in Team Create?**
 
-No. There is no key system, no login, and nothing to activate. Install the file and it works.
-</details>
+Yes. Live collaboration is supported.
 
-<details>
-<summary><strong>Which Studio versions does it work with?</strong></summary>
+**Is it safe?**
 
-It is intended for current Roblox Studio releases on Windows and macOS. Running older or heavily modified Studio builds may cause unexpected behavior.
-</details>
+It installs as a local Studio plugin. To inspect it first, use Insert from File instead of copying it directly to the Plugins folder, then browse its contents in Explorer before saving it as a plugin.
 
-<details>
-<summary><strong>Can I use it with custom rigs?</strong></summary>
+**What if Studio crashes?**
 
-Yes. R6, R15, custom skeletons, and rigs imported from Blender are all supported.
-</details>
-
-<details>
-<summary><strong>Does it work in Team Create?</strong></summary>
-
-Yes. Live collaborative editing is one of its core features, letting several animators work inside the same animation file at once.
-</details>
-
-<details>
-<summary><strong>Can I export animations into my own game?</strong></summary>
-
-Yes. Animations can be exported for in-game use, and the ModuleScript exporter lets you drive motion from scripts.
-</details>
-
-<details>
-<summary><strong>Is it safe to install?</strong></summary>
-
-The plugin is a `.rbxm` model file installed locally through Studio's own plugin system. If you want full transparency, use Method 2 in the installation section to inspect its contents before saving it as a local plugin.
-</details>
-
-<details>
-<summary><strong>What happens if Studio crashes while I am animating?</strong></summary>
-
-The plugin keeps background snapshots of your timeline state and can restore your session after a crash.
-</details>
+The plugin keeps background snapshots and can restore the timeline session.
 
 ---
 
 ## Troubleshooting
 
-| Problem | Solution |
+| Problem | Fix |
 | :--- | :--- |
-| The plugin does not appear in the Plugins tab | Confirm the `.rbxm` is inside the correct `Plugins` folder and restart Studio completely. |
-| The plugin button appears but the window is blank | Update Roblox Studio to the latest release and relaunch. |
-| Playback feels choppy | Reduce scene complexity during preview, or close other viewport-heavy panels. |
-| Keyframes look wrong after retiming | Check your easing curves in the graph editor, then re-scrub the timeline to refresh. |
-| Physics simulation behaves unexpectedly | Confirm the rig's collision and mass properties, then re-run the simulation from a clean state. |
-| Team Create edits do not sync | Verify your connection and that all collaborators are in the same session. |
-| Visuals or layout look broken | Reset the plugin's interface layout from its settings, then re-dock the panels. |
+| Plugin missing from Plugins tab | Confirm the `.rbxmx` is in the correct Plugins folder for your OS. Restart Studio completely. |
+| Button shows but window is blank | Update Studio to the latest release. Relaunch. Disable conflicting animation plugins and retry. |
+| Choppy preview | Simplify the scene during preview. Close heavy viewport panels. |
+| Keys look wrong after retiming | Open the graph editor, check easing curves, re-scrub the timeline. |
+| Physics behaves unexpectedly | Check rig collision and mass properties. Re-run simulation from a clean state. |
+| Team Create does not sync | Confirm all users are in the same session with a stable connection. |
+| Layout looks broken | Reset the interface layout in plugin settings, then re-dock panels. |
+| macOS quarantine warning | Allow the file in Privacy and Security, then restart Studio. |
+| Linux / Wine issues | Verify your Vinegar / Bottles prefix path. Update Wine. Use Windows or macOS for critical work. |
+
+If the problem persists, open an issue with: Studio version, OS and version, plugin file name and release tag, and exact reproduction steps.
 
 ---
 
 ## Contributing
 
-- **Bug reports:** open an issue with your Studio version, operating system, and the exact steps to reproduce.
-- **Feature requests:** open an issue describing the workflow you are trying to achieve.
-- **Documentation fixes:** pull requests that correct or extend this README are welcome.
-- **Please do not:** repackage and resell this build as your own paid product.
+Bug reports and documentation fixes are welcome. This is an archive of a past release, so no new plugin features are planned here.
+
+- Found a bug in this free build: open an issue with Studio version, OS, steps to reproduce, and expected behavior.
+- Have a docs improvement: open a pull request against `README.md` or `CONTRIBUTING.md`.
+- Please do not repackage and resell this build.
+
+See `CONTRIBUTING.md` for the full guide.
 
 ---
 
 ## License and Disclaimer
 
-This build is shared for free use by the animation community, in the state it existed before Eclipse Animator became a paid product.
+This build is shared for free community use, in the state it existed before Eclipse Animator became paid.
 
-- You may install it, use it in your own projects, and share this repository.
-- You may not resell it or redistribute it behind a paywall.
-- It is provided **as is**, without warranty of any kind. The maintainers of this repository are not responsible for any loss of data, project corruption, or other damage arising from its use.
-- This repository is an archive of a past release. It is not affiliated with, or supported by, any current paid distribution of the plugin.
+You may:
 
-Always keep backups of your places and animation files before adopting any plugin into a production workflow.
+- Install and use it in personal, educational, and commercial projects.
+- Share this repository link with others.
+
+You may not:
+
+- Resell the plugin file itself.
+- Redistribute it behind a paywall, key system, or paid pack.
+
+The plugin is provided **as is**, without warranty of any kind. Keep backups of your places and animation files. The maintainers of this archive are not responsible for data loss or project issues arising from its use.
+
+This archive is not affiliated with or supported by any current paid distribution of the plugin.
 
 ---
 
 <div align="center">
 
-**Eclipse Animator — the pre-paid release, preserved.**
+**Eclipse Animator — free build, preserved for animators.**
 
-*Animating in Roblox Studio, the way it should have always worked.*
+Roblox Studio animation, timeline editing, IK and FK rigging, physics simulation, Team Create collaboration, and animation export.
+
+*Keywords: roblox animation plugin, roblox studio animator, r6 r15 animation, ik fk rig, animation timeline, luau animation, free animator, eclipse animator.*
 
 </div>

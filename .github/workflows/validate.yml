@@ -1,0 +1,39 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files
+        run: |
+          test -f README.md || (echo "README.md missing" && exit 1)
+          test -f LICENSE || (echo "LICENSE missing" && exit 1)
+          test -f CONTRIBUTING.md || (echo "CONTRIBUTING.md missing" && exit 1)
+          test -f assets/logo.svg || (echo "assets/logo.svg missing" && exit 1)
+          test -f Eclipse-Animator-inspect.rbxmx || (echo "plugin file missing" && exit 1)
+          echo "All required files present."
+      - name: Check README links
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, sys
+          text = pathlib.Path("README.md").read_text(encoding="utf-8")
+          # No emojis allowed in README
+          import re as _re
+          emoji_pattern = _re.compile(r"[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF]")
+          if emoji_pattern.search(text):
+              print("ERROR: README contains emojis, remove them.")
+              sys.exit(1)
+          # Required sections
+          for section in ["Download in 1 Minute", "Install on Windows", "Install on macOS", "Install on Linux"]:
+              if section not in text:
+                  print(f"ERROR: missing section: {section}")
+                  sys.exit(1)
+          print("README checks passed.")
+          PY

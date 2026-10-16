@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Releases download
+    url: https://github.com/7kg2-here/Eclipse-Animator-free/releases
+    about: Download the plugin file directly, no install help needed.

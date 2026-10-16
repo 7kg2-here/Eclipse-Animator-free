@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a problem with the free build
+labels: [bug]
+body:
+  - type: input
+    id: studio-version
+    attributes:
+      label: Roblox Studio version
+      placeholder: "Example: 0.658.x, Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / macOS 14 / Ubuntu 24.04 + Vinegar"
+    validations:
+      required: true
+  - type: input
+    id: release
+    attributes:
+      label: Release and file used
+      placeholder: "Example: v1.0957-free / Eclipse-Animator-inspect.rbxmx"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open Studio...\n2. Click...\n3. See error..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, video, or logs

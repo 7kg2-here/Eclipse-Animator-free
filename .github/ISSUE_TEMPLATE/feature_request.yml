@@ -1,0 +1,21 @@
+name: Feature Request
+description: Suggest a docs or community improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What workflow are you trying to achieve?
+      placeholder: "Example: animate an R15 combat combo with IK..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you tried
