@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" width="160" alt="Eclipse Animator logo" />
+<img src="assets/logo.png" width="160" alt="Eclipse Animator logo" />
 
 # Eclipse Animator — Free Release
 
@@ -259,7 +259,9 @@ Confirm bindings in the plugin settings panel, as they can be remapped.
 ```
 .
 ├── assets/
-│   └── logo.svg                        # Logo used at the top of this README
+│   ├── logo.png                        # Original Eclipse logo (toolbar brand mark)
+│   ├── logo-plugin.png                 # Original in-plugin header icon
+│   └── logo-concept.svg                # Alternative concept art
 ├── Eclipse-Animator-inspect.rbxmx      # The plugin file. Install this.
 ├── README.md                           # This documentation
 ├── LICENSE                            # Usage terms
