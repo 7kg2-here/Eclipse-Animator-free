@@ -1,4 +1,4 @@
-# tools/ — Eclipse Animator source toolkit
+# tools/ — Eclipse Animator Open source toolkit
 
 Small, dependency-free Python 3 tools that open the Roblox binary model format
 so the plugin in this repository can be read, edited and rebuilt.
@@ -9,7 +9,7 @@ chunks, which this file does not use, would need `pip install zstandard`).
 ## Unpack the plugin
 
 ```bash
-python3 tools/unpack.py Eclipse-Animator-inspect.rbxm src
+python3 tools/unpack.py "Eclipse Animator Open.rbxm" src
 ```
 
 * `src/**/*.luau` — every `Script`, `LocalScript` and `ModuleScript`
@@ -37,13 +37,51 @@ rest of the model. Afterwards the tool reads its own output back and checks all
 
 Re-packing an unmodified `src/` reproduces the original file byte-for-byte.
 
+## Read and edit the plugin as XML (`.rbxmx`)
+
+The packed `.rbxm` is binary, so a text editor cannot show it as code.  The XML
+model format carries the same data as text, which is what you want if you would
+rather edit the plugin by hand in VS Code:
+
+```bash
+# .rbxm  ->  readable/editable XML
+python3 tools/rbxmx.py "Eclipse Animator Open.rbxm" "Eclipse Animator Open.rbxmx"
+
+# edit the XML in any text editor, then convert back to an installable plugin
+python3 tools/rbxmx.py "Eclipse Animator Open.rbxmx" "Eclipse Animator Open.rbxm"
+```
+
+Every script appears verbatim inside a `<ProtectedString name="Source">` element:
+
+```xml
+<Item class="ModuleScript" referent="42">
+  <Properties>
+    <ProtectedString name="Source"><![CDATA[
+local function greet()
+	print("hello")   -- edit me
+end
+]]></ProtectedString>
+    <token name="RunContext">0</token>
+  </Properties>
+</Item>
+```
+
+Other property types are readable too: `<Vector3>`, `<Color3>`, `<UDim2>`,
+`<bool>`, `<int>`, `<token>` (enum values), `<Ref>` (links between instances),
+`<BinaryString>` (attributes), `<SharedString>` definitions collected at the end
+of the file.
+
+Round-tripping is lossless: `rbxm → rbxmx → rbxm` keeps every property value,
+the whole instance hierarchy and the shared-string table identical, and edits
+made inside the XML survive the conversion back.
+
 ## Inspecting the format directly
 
 ```python
 import sys; sys.path.insert(0, "tools")
 import rbxm
 
-model = rbxm.decode_model(rbxm.read_file("Eclipse-Animator-inspect.rbxm"))
+model = rbxm.decode_model(rbxm.read_file("Eclipse Animator Open.rbxm"))
 paths = rbxm.instance_paths(model)          # referent -> "Container/Modules/Foo"
 props = rbxm.property_map(model)            # referent -> {property: value}
 print(paths[0], sorted(props[0])[:5])

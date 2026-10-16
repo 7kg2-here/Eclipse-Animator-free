@@ -431,8 +431,10 @@ def v_uniqueid(index: int, time: int, random: int): return ("UniqueId", (index, 
 def v_font(family: bytes, weight: int, style: int, cached: bytes):
     return ("Font", (family, weight, style, cached))
 def v_securitycapabilities(bits: int): return ("SecurityCapabilities", bits)
-def v_content(types, uris, objects, externals):
-    return ("Content", (list(types), list(uris), list(objects), bytes(externals)))
+def v_content(kind: int, uri: Optional[bytes] = None, ref: Optional[int] = None,
+              externals: bytes = b""):
+    """One instance's ``Content`` value: kind 0 = none, 1 = uri, 2 = object ref."""
+    return ("Content", (int(kind), uri, ref, bytes(externals)))
 
 
 # --------------------------------------------------------------------------
@@ -658,14 +660,26 @@ def decode_property_values(
     elif type_id == T_SECURITYCAPABILITIES:
         values = [v_securitycapabilities(v & 0xFFFFFFFFFFFFFFFF) for v in r.i64_array(count)]
     elif type_id == T_CONTENT:
-        types = r.i32_array(count)
+        kinds = r.i32_array(count)
         uri_count = r.u32()
         uris = [r.string() for _ in range(uri_count)]
         object_count = r.u32()
         objects = r.referent_array(object_count)
         external_count = r.u32()
         externals = r.take(external_count * 4)
-        values = [v_content(types, uris, objects, externals)] * count
+        uri_cursor = 0
+        object_cursor = 0
+        for kind in kinds:
+            if kind == 1:
+                uri = uris[uri_cursor] if uri_cursor < len(uris) else None
+                uri_cursor += 1
+                values.append(v_content(1, uri, None, externals))
+            elif kind == 2:
+                ref = objects[object_cursor] if object_cursor < len(objects) else None
+                object_cursor += 1
+                values.append(v_content(2, None, ref, externals))
+            else:
+                values.append(v_content(0, None, None, externals))
     else:
         raise RbxmError("unsupported property type 0x%02x" % type_id)
     return values
@@ -830,7 +844,7 @@ def encode_property_values(type_id: int, values: Sequence[Any]) -> bytes:
             if flag & 1:
                 if custom is None:
                     raise RbxmError("PhysicalProperties flag says custom but no data")
-                out += struct.pack("<6f", *custom)
+                out += struct.pack("<%df" % len(custom), *custom)
     elif type_id == T_SHAREDSTRING:
         out += _enc_interleaved(struct.pack(">I", get(v) & 0xFFFFFFFF) for v in values)
     elif type_id == T_UNIQUEID:
@@ -854,10 +868,20 @@ def encode_property_values(type_id: int, values: Sequence[Any]) -> bytes:
             struct.pack(">Q", transform_i64(_as_i64(get(v)))) for v in values
         )
     elif type_id == T_CONTENT:
-        types, uris, objects, externals = get(values[0])
-        out += _enc_interleaved(
-            struct.pack(">I", transform_i32(t)) for t in types
-        )
+        kinds = []
+        uris = []
+        objects = []
+        externals = b""
+        for value in values:
+            kind, uri, ref, extra = get(value)
+            objects.append(ref)
+            kinds.append(kind if kind in (0, 1, 2) else 0)
+            if kind == 1 and uri is not None:
+                uris.append(uri)
+            externals = externals or extra
+        if len(set(kinds)) == 1 and kinds and kinds[0] != 1:
+            uris = []  # nothing references the pool
+        out += _enc_interleaved(struct.pack(">I", transform_i32(k)) for k in kinds)
         out += struct.pack("<I", len(uris))
         for uri in uris:
             out += struct.pack("<I", len(uri)) + uri
@@ -865,11 +889,10 @@ def encode_property_values(type_id: int, values: Sequence[Any]) -> bytes:
         last = 0
         deltas = []
         for ref in objects:
+            ref = -1 if ref is None else ref
             deltas.append(ref - last)
             last = ref
-        out += _enc_interleaved(
-            struct.pack(">I", transform_i32(d)) for d in deltas
-        )
+        out += _enc_interleaved(struct.pack(">I", transform_i32(d)) for d in deltas)
         out += struct.pack("<I", len(externals) // 4)
         out += externals
     else:

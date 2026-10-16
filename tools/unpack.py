@@ -12,8 +12,8 @@ Everything the file contains becomes ordinary text on disk:
 
 Usage::
 
-    python3 tools/unpack.py Eclipse-Animator-inspect.rbxm src
-    python3 tools/unpack.py Eclipse-Animator-inspect.rbxm src --model-json
+    python3 tools/unpack.py "Eclipse Animator Open.rbxm" src
+    python3 tools/unpack.py "Eclipse Animator Open.rbxm" src --model-json
 """
 
 from __future__ import annotations

@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="Eclipse Animator" width="100%">
 
-# Eclipse Animator
+# Eclipse Animator Open
 
 **A next-generation animation suite for Roblox Studio — built for animators who outgrew the basics.**
 
@@ -19,11 +19,24 @@
 
 > ### About this repository
 >
-> This repository hosts the **Eclipse Animator build that was published before the plugin became a paid product.**
+> This repository hosts **Eclipse Animator Open** — the build of Eclipse
+> Animator that was published before the plugin became a paid product.
 >
 > It is preserved here in the exact state it existed in when it was still freely available: one `.rbxm` plugin file, no license server, no account checks, no microtransactions. Everything loads straight into Roblox Studio and works out of the box.
 >
 > The goal of this repository is simple — keep the original free release accessible to the animation community that helped the project grow in the first place. As well as the original file, the repository now carries the plugin's complete source, unpacked and editable, so the build can be studied and changed instead of just installed.
+
+## Download
+
+| Download | Use it for |
+| :--- | :--- |
+| **[Eclipse Animator Open.rbxm](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest/download/Eclipse%20Animator%20Open.rbxm)** | installing the plugin (drop it in your Studio `Plugins` folder) |
+| **[Eclipse Animator Open.rbxmx](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest/download/Eclipse%20Animator%20Open.rbxmx)** | reading and editing the whole plugin in VS Code or any text editor |
+| **[Latest release](https://github.com/7kg2-here/Eclipse-Animator-free/releases/latest)** | both files plus the complete source archive in one zip, with checksums |
+
+Both plugin files do the same thing — Studio opens `.rbxm` and `.rbxmx` alike.
+
+---
 
 > **The build is not encrypted.** It is a standard Roblox binary model (`.rbxm`)
 > with LZ4-compressed chunks — that compression is all "the encryption" ever was.
@@ -37,6 +50,7 @@
 
 - [About Eclipse Animator](#about-eclipse-animator)
 - [Editable Source](#editable-source)
+- [Open the plugin in a text editor](#open-the-plugin-in-a-text-editor)
 - [Plugin at a Glance](#plugin-at-a-glance)
 - [Features](#features)
 - [Installation](#installation)
@@ -122,12 +136,65 @@ To inspect the rest of the model as text — UI sizes, colors, CFrames, keyframe
 tables, everything — dump every property of every instance:
 
 ```bash
-python3 tools/unpack.py Eclipse-Animator-inspect.rbxm src --model-json
+python3 tools/unpack.py "Eclipse Animator Open.rbxm" src --model-json
 # -> src/_model.json
 ```
 
 Install the rebuilt `EclipseAnimator.rbxm` exactly as described in
 [Installation](#installation).
+
+---
+
+## Open the plugin in a text editor
+
+A `.rbxm` is a packed binary container — open it in VS Code and you only get
+binary noise. That is exactly why this repository also ships the **same plugin
+as XML**, which is plain text:
+
+| File | What it is |
+| :--- | :--- |
+| `Eclipse Animator Open.rbxm` | the plugin, packed (install this one) |
+| `Eclipse Animator Open.rbxmx` | the very same plugin as readable XML — open it in VS Code, Notepad, or any text editor |
+| `tools/rbxmx.py` | converts between the two |
+
+Both files install the same way in Roblox Studio; Studio reads either format.
+
+### Edit it by hand
+
+1. Open `Eclipse Animator Open.rbxmx` in VS Code (it is ~10 MB of ordinary
+   text; syntax highlighting works, and searching for `Deaths`, `Timeline`, a
+   function name, or a dialog string jumps straight to it).
+2. Every script sits in a `<ProtectedString name="Source">` element as plain
+   Luau:
+
+   ```xml
+   <Item class="ModuleScript" referent="42">
+     <Properties>
+       <ProtectedString name="Source"><![CDATA[
+   local Players = game:GetService("Players")
+   -- … edit freely …
+   ]]></ProtectedString>
+   </Properties>
+   <Item class="LocalScript" referent="43">…</Item>
+   </Item>
+   ```
+
+   Every other property is readable too — `<Vector3>`, `<Color3>`, `<UDim2>`,
+   `<token>` (enums), `<Ref>` (object links), `<BinaryString>` (attributes),
+   `<SharedString>` definitions at the bottom of the file.
+3. Convert your edited XML back into an installable plugin:
+
+   ```bash
+   python3 tools/rbxmx.py "Eclipse Animator Open.rbxmx" "Eclipse Animator Open.rbxm"
+   ```
+
+   …or open the `.rbxmx` in Studio directly with **Insert from File…** and use
+   **Save as Local Plugin**.
+
+The converter is lossless in both directions: `rbxm → rbxmx → rbxm` reproduces
+every property, every parent/child link and the whole shared-string table
+byte-for-byte-equal in value. Editing works, too — a change made inside the XML
+shows up in the rebuilt `.rbxm`.
 
 ---
 
@@ -210,7 +277,7 @@ Eclipse Animator ships as a single `.rbxm` file and installs as a **local plugin
 
 ### Method 1 — Local plugin folder (recommended)
 
-1. Download `Eclipse-Animator-inspect.rbxm` from this repository (or build
+1. Download `Eclipse Animator Open.rbxm` from this repository (or build
    `EclipseAnimator.rbxm` from `src/` with `tools/repack.py`).
 2. Open your Roblox Studio plugins folder:
 
@@ -228,7 +295,7 @@ Eclipse Animator ships as a single `.rbxm` file and installs as a **local plugin
 
    If the `Plugins` folder does not exist, create it manually.
 
-3. Copy the `.rbxm` file into that folder — `Eclipse-Animator-inspect.rbxm` as
+3. Copy the `.rbxm` file into that folder — `Eclipse Animator Open.rbxm` as
    downloaded, or `EclipseAnimator.rbxm` if you rebuilt it from source.
 4. Restart Roblox Studio completely.
 5. Eclipse Animator appears in the **Plugins** tab of the ribbon.
@@ -312,7 +379,7 @@ The default bindings are listed below, and every one of them can be remapped fro
 
 ```
 .
-├── Eclipse-Animator-inspect.rbxm   # The plugin file — install this (Roblox binary model)
+├── Eclipse Animator Open.rbxm   # The plugin file — install this (Roblox binary model)
 ├── assets/
 │   ├── logo.png                    # Project logo banner, shown at the top of this README
 │   └── icon.png                    # Square logo mark
@@ -336,7 +403,14 @@ Running `python3 tools/repack.py` after editing `src/` writes
 
 ## Changelog
 
-### Pre-paid release (this repository)
+### Open release (this repository)
+
+- Renamed to **Eclipse Animator Open**.
+- Added `Eclipse Animator Open.rbxmx` — the whole plugin as readable XML that opens in any text editor.
+- Added `tools/` — unpack/repack/conversion toolkit, plus the full source under `src/`.
+- Added the project logo in `assets/`.
+
+### Pre-paid release (original upload)
 
 - Published as the original free release of Eclipse Animator.
 - Includes the full animation suite: timeline, IK/FK, physics simulation, collaboration, crash recovery, exporters, and render effects.
@@ -349,6 +423,26 @@ Following this release, Eclipse Animator continued development as a paid product
 ---
 
 ## Frequently Asked Questions
+
+<details>
+<summary><strong>I opened the .rbxm in VS Code and it is gibberish — where is the code?</strong></summary>
+
+A `.rbxm` is a packed binary container, so a text editor shows binary, not text.
+The code lives in the **XML** twin of the same file: open
+`Eclipse Animator Open.rbxmx` and every one of the 362 scripts is right there as
+readable Luau inside `<ProtectedString name="Source">` elements. Edit the text,
+then convert it back with `python3 tools/rbxmx.py` (see
+[Open the plugin in a text editor](#open-the-plugin-in-a-text-editor)), or work
+with the extracted `.luau` files in `src/` instead.
+</details>
+
+<details>
+<summary><strong>Can I edit it and keep using it in Studio?</strong></summary>
+
+Yes. Edit the `.rbxmx` in any text editor and convert it back, or edit the
+`.luau` files under `src/` and run `tools/repack.py`. Either route produces a
+plugin file Studio loads normally.
+</details>
 
 <details>
 <summary><strong>Is this the latest version of Eclipse Animator?</strong></summary>
