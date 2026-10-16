@@ -1,0 +1,3273 @@
+{
+ "source_file": "Eclipse-Animator-inspect.rbxm",
+ "generated_by": "tools/unpack.py",
+ "instances": 2195,
+ "classes": 49,
+ "shared_strings": 4,
+ "metadata": [
+  [
+   "ExplicitAutoJoints",
+   "true"
+  ]
+ ],
+ "scripts": [
+  {
+   "referent": 0,
+   "class": "Script",
+   "path": "Eclipse Animator",
+   "name": "Eclipse Animator",
+   "file": "Eclipse Animator.server.luau",
+   "bytes": 298,
+   "sha256": "be3270dc89f8440a9048b734a08597adedcae17a704a5326bdb55616a818a2a7"
+  },
+  {
+   "referent": 1821,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Require",
+   "name": "Require",
+   "file": "Eclipse Animator/Container/Require.luau",
+   "bytes": 916,
+   "sha256": "1626af65b4d3ad642b63a248b3badf566c9b2e43afe38ddaac767c48d6f34b8b"
+  },
+  {
+   "referent": 1823,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipseRGB",
+   "name": "EclipseRGB",
+   "file": "Eclipse Animator/Container/Shared/EclipseRGB.luau",
+   "bytes": 1011,
+   "sha256": "8daba6433fde351dcd09570c60b526be00d37664119022e82fb36ec955d8e760"
+  },
+  {
+   "referent": 1824,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipseOklab",
+   "name": "EclipseOklab",
+   "file": "Eclipse Animator/Container/Shared/EclipseOklab.luau",
+   "bytes": 2367,
+   "sha256": "71ee56ed4f35f323fceff5a615901ea483c3f0bf87d781997f8b9a840ec90635"
+  },
+  {
+   "referent": 1825,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipsePromise",
+   "name": "EclipsePromise",
+   "file": "Eclipse Animator/Container/Shared/EclipsePromise.luau",
+   "bytes": 25586,
+   "sha256": "2cb3f1177e69c4837d655e8c86513c6893ec12a6caaaedaa0814d6411f314c81"
+  },
+  {
+   "referent": 1826,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipseShake",
+   "name": "EclipseShake",
+   "file": "Eclipse Animator/Container/Shared/EclipseShake.luau",
+   "bytes": 4588,
+   "sha256": "e2005ad86e04a6092630fad7974b298638ca0251abf27d67cb43305e6ca25438"
+  },
+  {
+   "referent": 1827,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipseDrawing",
+   "name": "EclipseDrawing",
+   "file": "Eclipse Animator/Container/Shared/EclipseDrawing.luau",
+   "bytes": 16561,
+   "sha256": "40d76fe08876aa1a06b46af12771a9a6e6a688fd79d3bd2208f40eed0d19d446"
+  },
+  {
+   "referent": 1828,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Shared/EclipseDrawingEditor",
+   "name": "EclipseDrawingEditor",
+   "file": "Eclipse Animator/Container/Shared/EclipseDrawingEditor.luau",
+   "bytes": 31334,
+   "sha256": "b14885f28d1019f3bff3f9c21eab4264925b0f56e2f831c5d75c87b213bb32b0"
+  },
+  {
+   "referent": 1830,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ProjectData",
+   "name": "ProjectData",
+   "file": "Eclipse Animator/Container/Storage/ProjectData.luau",
+   "bytes": 21924,
+   "sha256": "f889b00e6515594704e6b80de1495af70b6de21fd7a182ffadf9201512f59daa"
+  },
+  {
+   "referent": 1831,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/SavedDefaults",
+   "name": "SavedDefaults",
+   "file": "Eclipse Animator/Container/Storage/SavedDefaults.luau",
+   "bytes": 3200,
+   "sha256": "abd4d965393be37033346d4f339b561f5585be702b630f1bb63d34a53562d582"
+  },
+  {
+   "referent": 1832,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/layerStorage",
+   "name": "layerStorage",
+   "file": "Eclipse Animator/Container/Storage/layerStorage.luau",
+   "bytes": 9190,
+   "sha256": "50d288fa6ac2c768923bf257a966b9e969c4b56511069503512f3ba2b5370dd3"
+  },
+  {
+   "referent": 1833,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Layers",
+   "name": "Layers",
+   "file": "Eclipse Animator/Container/Storage/Layers.luau",
+   "bytes": 42987,
+   "sha256": "924aa44da556715c1b2d7c841fe96eed3bfdbb1860e4feafbca1a034c54e2641"
+  },
+  {
+   "referent": 1834,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ChunkStore",
+   "name": "ChunkStore",
+   "file": "Eclipse Animator/Container/Storage/ChunkStore.luau",
+   "bytes": 5610,
+   "sha256": "425ea625d0b14cc19a75341778f5626697838de51827eed9949653c17932de1e"
+  },
+  {
+   "referent": 1835,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Codec",
+   "name": "Codec",
+   "file": "Eclipse Animator/Container/Storage/Codec.luau",
+   "bytes": 4321,
+   "sha256": "abafaad437e7e3544594fb5b0d0ecdc501d385da33bfd547a7a2b5b7598e46ee"
+  },
+  {
+   "referent": 1836,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/layer",
+   "name": "layer",
+   "file": "Eclipse Animator/Container/Storage/layer.luau",
+   "bytes": 3094,
+   "sha256": "0b7d1a63a20d6282b1c7ad6ade7e78c8bd825cea7fa3826b943fee66abf0c1ba"
+  },
+  {
+   "referent": 1837,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ValueCodec",
+   "name": "ValueCodec",
+   "file": "Eclipse Animator/Container/Storage/ValueCodec.luau",
+   "bytes": 1031,
+   "sha256": "b9c30227d8029849ab45281a1dadf546f10b85180a8655103d7d848f646fc64a"
+  },
+  {
+   "referent": 1838,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Paths",
+   "name": "Paths",
+   "file": "Eclipse Animator/Container/Storage/Paths.luau",
+   "bytes": 2630,
+   "sha256": "01807bee6bfb23dfaed2350e551a54335f0152579d572dad5e4d81b7c5584178"
+  },
+  {
+   "referent": 1839,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Storage",
+   "name": "Storage",
+   "file": "Eclipse Animator/Container/Storage/Storage.luau",
+   "bytes": 3493,
+   "sha256": "f830314158696eac812bea1971eb5c4040e0841197efe98ef412a7a841970254"
+  },
+  {
+   "referent": 1840,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Document",
+   "name": "Document",
+   "file": "Eclipse Animator/Container/Storage/Document.luau",
+   "bytes": 12832,
+   "sha256": "c8ced83f5082a5a83c52599522dae11f8ea8275485d341b0d94b33468cc1d04d"
+  },
+  {
+   "referent": 1841,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Recovery",
+   "name": "Recovery",
+   "file": "Eclipse Animator/Container/Storage/Recovery.luau",
+   "bytes": 46130,
+   "sha256": "492885b99f8506208dd123a7dcab226e19d92835a11d0eb0a68c087fdb9e1302"
+  },
+  {
+   "referent": 1842,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Export",
+   "name": "Export",
+   "file": "Eclipse Animator/Container/Storage/Export.luau",
+   "bytes": 91795,
+   "sha256": "dccfe9a73ac74c92d42e3429d1947fdbbbdf81aaf3863b76431358252c5a8279"
+  },
+  {
+   "referent": 1843,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Project",
+   "name": "Project",
+   "file": "Eclipse Animator/Container/Storage/Project.luau",
+   "bytes": 93219,
+   "sha256": "61ae66981816750e65ea2479531de753d0128ab71774b9dd8725f0683a16f51c"
+  },
+  {
+   "referent": 1844,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/AssetIds",
+   "name": "AssetIds",
+   "file": "Eclipse Animator/Container/Storage/AssetIds.luau",
+   "bytes": 482,
+   "sha256": "de455994946ba743b6cd72975a86dc069770b23e7a7b0452776cfe99c39d0e58"
+  },
+  {
+   "referent": 1845,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/AnimationLayers",
+   "name": "AnimationLayers",
+   "file": "Eclipse Animator/Container/Storage/AnimationLayers.luau",
+   "bytes": 19871,
+   "sha256": "e886bea2dd46d7f721ce94f5acfa4b862a589375058a0949ef65650bce0b6223"
+  },
+  {
+   "referent": 1846,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/DumpStorage",
+   "name": "DumpStorage",
+   "file": "Eclipse Animator/Container/Storage/DumpStorage.luau",
+   "bytes": 6452,
+   "sha256": "a337d1c1e389d0faeae71eca2b2e30437137b37370469ddb5a0da958020118fa"
+  },
+  {
+   "referent": 1847,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ExportResults",
+   "name": "ExportResults",
+   "file": "Eclipse Animator/Container/Storage/ExportResults.luau",
+   "bytes": 9632,
+   "sha256": "567e845e0e1338c03a429e5cef945119333371f37cf2d7fec7f232565c3111fc"
+  },
+  {
+   "referent": 1848,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ImageLibrary",
+   "name": "ImageLibrary",
+   "file": "Eclipse Animator/Container/Storage/ImageLibrary.luau",
+   "bytes": 2959,
+   "sha256": "586906fbd5e269780524371ec348c420c67eb4a717209262ab2aca2edd2ccdfa"
+  },
+  {
+   "referent": 1849,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/ModuleExporter",
+   "name": "ModuleExporter",
+   "file": "Eclipse Animator/Container/Storage/ModuleExporter.luau",
+   "bytes": 13246,
+   "sha256": "3f56a22c2a61b52588ffcb570ed2ae0487651d9292ab46e0720c0744269b3436"
+  },
+  {
+   "referent": 1850,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/PropertyValues",
+   "name": "PropertyValues",
+   "file": "Eclipse Animator/Container/Storage/PropertyValues.luau",
+   "bytes": 16210,
+   "sha256": "95e77ee052e313e0875e1c930aff8cc1666b4e183fd5846e8ebf0f5533b78aae"
+  },
+  {
+   "referent": 1851,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/TrackOrganizationStorage",
+   "name": "TrackOrganizationStorage",
+   "file": "Eclipse Animator/Container/Storage/TrackOrganizationStorage.luau",
+   "bytes": 19400,
+   "sha256": "3cb5ba63027202e8f43567a9af77e39023b6ae10d66400eeac55589ced50c556"
+  },
+  {
+   "referent": 1852,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/KoiImages",
+   "name": "KoiImages",
+   "file": "Eclipse Animator/Container/Storage/KoiImages.luau",
+   "bytes": 6759,
+   "sha256": "9dc2c3c940f735b475ba8986113de32a850778fa702fa69055121d1c1806f690"
+  },
+  {
+   "referent": 1853,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/transaction",
+   "name": "transaction",
+   "file": "Eclipse Animator/Container/Storage/transaction.luau",
+   "bytes": 10927,
+   "sha256": "b9e070c0c5ee3d13838a4d282eda19fffe224ad92b73554936c903a1495f517a"
+  },
+  {
+   "referent": 1854,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Path",
+   "name": "Path",
+   "file": "Eclipse Animator/Container/Storage/Path.luau",
+   "bytes": 4007,
+   "sha256": "8292e9fdddd9d8df1f336389069513152dbbf247057998dea005aa2550941de2"
+  },
+  {
+   "referent": 1855,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Storage/Config",
+   "name": "Config",
+   "file": "Eclipse Animator/Container/Storage/Config.luau",
+   "bytes": 455,
+   "sha256": "92c329466d8fef4f02068828a91e3ae0a5f42fca0f7d2f11e5e90169b12aae53"
+  },
+  {
+   "referent": 1857,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeCleanup",
+   "name": "KeyframeCleanup",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeCleanup.luau",
+   "bytes": 14747,
+   "sha256": "d1c990038bcb35de4e481ee2f1f438288c93b83b0045162e75d39da243625011"
+  },
+  {
+   "referent": 1858,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/CurveGraph",
+   "name": "CurveGraph",
+   "file": "Eclipse Animator/Container/Timeline/CurveGraph.luau",
+   "bytes": 8744,
+   "sha256": "28fa42ce27c760e442593049ead286f06fe0dcda0d48a6be3a0d95353c60dfb3"
+  },
+  {
+   "referent": 1859,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/DockHost",
+   "name": "DockHost",
+   "file": "Eclipse Animator/Container/Timeline/DockHost.luau",
+   "bytes": 2500,
+   "sha256": "a27486e2cedde202188d63f9a9f1b7992f646a24b6be0b4027aa1a8c28ffa78e"
+  },
+  {
+   "referent": 1860,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphCurves",
+   "name": "GraphCurves",
+   "file": "Eclipse Animator/Container/Timeline/GraphCurves.luau",
+   "bytes": 39972,
+   "sha256": "4537526334da81a6f0782c042584ce6ba418c4899b1153b3a364d02b07631da6"
+  },
+  {
+   "referent": 1861,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphExtras",
+   "name": "GraphExtras",
+   "file": "Eclipse Animator/Container/Timeline/GraphExtras.luau",
+   "bytes": 20455,
+   "sha256": "5ac677519a4c12abef0ce90cee02940334d18d21710608ba3230a6c85cc80c91"
+  },
+  {
+   "referent": 1862,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphView",
+   "name": "GraphView",
+   "file": "Eclipse Animator/Container/Timeline/GraphView.luau",
+   "bytes": 78534,
+   "sha256": "3695e079d817147a142d6ac0a28cf2c7d22b7e10271a625886d5abd72e5087a4"
+  },
+  {
+   "referent": 1863,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeDefaults",
+   "name": "KeyframeDefaults",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeDefaults.luau",
+   "bytes": 1433,
+   "sha256": "9d59b1badedc654e61fcbf8df6e0b03fed4e638daecca1577561c86542d020dc"
+  },
+  {
+   "referent": 1864,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/motionPath",
+   "name": "motionPath",
+   "file": "Eclipse Animator/Container/Timeline/motionPath.luau",
+   "bytes": 46222,
+   "sha256": "edb49a2189764dd6253dcaa580bde60bf29dccc08fac616bc4996dc49b290aa0"
+  },
+  {
+   "referent": 1865,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/handles",
+   "name": "handles",
+   "file": "Eclipse Animator/Container/Timeline/handles.luau",
+   "bytes": 17573,
+   "sha256": "45ee8c0a6ff2d167025826b762ff6f2d85373977438b3bc1cedc803c0e5312fa"
+  },
+  {
+   "referent": 1866,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/AnimationList",
+   "name": "AnimationList",
+   "file": "Eclipse Animator/Container/Timeline/AnimationList.luau",
+   "bytes": 19496,
+   "sha256": "ec248edac7b620b0759677e08f4eb86ef907e2349521019ede9125f5e4e2a12f"
+  },
+  {
+   "referent": 1867,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/AnimatorDock",
+   "name": "AnimatorDock",
+   "file": "Eclipse Animator/Container/Timeline/AnimatorDock.luau",
+   "bytes": 14495,
+   "sha256": "4e5de0cee8fbc96385364a47eb9f62e5b98f095b4b85fdbaf34425c982699147"
+  },
+  {
+   "referent": 1868,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/MarkerHandles",
+   "name": "MarkerHandles",
+   "file": "Eclipse Animator/Container/Timeline/MarkerHandles.luau",
+   "bytes": 3466,
+   "sha256": "c082283f162c674a72c5b32756d755dac9c142dac7b5970e5a9f2c071e1dc93f"
+  },
+  {
+   "referent": 1869,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphEditor",
+   "name": "GraphEditor",
+   "file": "Eclipse Animator/Container/Timeline/GraphEditor.luau",
+   "bytes": 82627,
+   "sha256": "769911e0bcab3aab3f2cca77b6c0d414babe3f313d89c200260b654c950fe236"
+  },
+  {
+   "referent": 1870,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeMenu",
+   "name": "KeyframeMenu",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeMenu.luau",
+   "bytes": 56536,
+   "sha256": "ff4439a3879b130e6fcfa8c975369e33863b5a9dfcbcd05dcd053ce3ddc9be44"
+  },
+  {
+   "referent": 1871,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeValues",
+   "name": "KeyframeValues",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeValues.luau",
+   "bytes": 21830,
+   "sha256": "50606bd50d8cf5211914407889ce576f9c274281acc32f8fbb19daee83fc2880"
+  },
+  {
+   "referent": 1872,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/TimelineStatic",
+   "name": "TimelineStatic",
+   "file": "Eclipse Animator/Container/Timeline/TimelineStatic.luau",
+   "bytes": 863,
+   "sha256": "9344d057e8a894fea8b889d98c23b2dce0ae6b089ff4d877328428e74d0ec725"
+  },
+  {
+   "referent": 1873,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphDragging",
+   "name": "GraphDragging",
+   "file": "Eclipse Animator/Container/Timeline/GraphDragging.luau",
+   "bytes": 37146,
+   "sha256": "70be4a3c64d5e53028b47c3ad480c8718e1662fa150e53b66803513e2959c681"
+  },
+  {
+   "referent": 1874,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/GraphInput",
+   "name": "GraphInput",
+   "file": "Eclipse Animator/Container/Timeline/GraphInput.luau",
+   "bytes": 36141,
+   "sha256": "a5c0fe6c113a92a2a80b4afded4f993a98776552c4ada61dc0e4d18d62151056"
+  },
+  {
+   "referent": 1875,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/TimelineScrubbing",
+   "name": "TimelineScrubbing",
+   "file": "Eclipse Animator/Container/Timeline/TimelineScrubbing.luau",
+   "bytes": 2522,
+   "sha256": "8dcccef992a07bb520bfdc0364b0e7219f47500294d9c3754c15ab7b68691cfc"
+  },
+  {
+   "referent": 1876,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/MotionPaths",
+   "name": "MotionPaths",
+   "file": "Eclipse Animator/Container/Timeline/MotionPaths.luau",
+   "bytes": 8509,
+   "sha256": "e0c31f8c38954b3242633d5435110f862155301e538d2dd759ceafa4da7be734"
+  },
+  {
+   "referent": 1877,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeClipboard",
+   "name": "KeyframeClipboard",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeClipboard.luau",
+   "bytes": 77429,
+   "sha256": "c0ece430c95cf5d570215fe56a26f0866c8b85ffe733027aff014a119a5fac0f"
+  },
+  {
+   "referent": 1878,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/KeyframeBaking",
+   "name": "KeyframeBaking",
+   "file": "Eclipse Animator/Container/Timeline/KeyframeBaking.luau",
+   "bytes": 35695,
+   "sha256": "af8f7315b6e4a26cb008891ae31043180bbc1c3acbee01016cdf3d80eeaa7c6b"
+  },
+  {
+   "referent": 1879,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/TimelinePlayhead",
+   "name": "TimelinePlayhead",
+   "file": "Eclipse Animator/Container/Timeline/TimelinePlayhead.luau",
+   "bytes": 9958,
+   "sha256": "74a988387e6fef490edd2782b1c5ae021ea6c76bba96077963e9fa6a1afc101d"
+  },
+  {
+   "referent": 1880,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/TimelineSelection",
+   "name": "TimelineSelection",
+   "file": "Eclipse Animator/Container/Timeline/TimelineSelection.luau",
+   "bytes": 5112,
+   "sha256": "a3643c7e6abc4d5a4319b548021b6c6379f2948a169079002fae77e7a4804f48"
+  },
+  {
+   "referent": 1881,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Timeline/TimeScale",
+   "name": "TimeScale",
+   "file": "Eclipse Animator/Container/Timeline/TimeScale.luau",
+   "bytes": 8408,
+   "sha256": "c691791a49081ff7ce4d9ec9ccbeaa109ca85d3c7ad77b5ebd9b6327521ab2a6"
+  },
+  {
+   "referent": 1883,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Binding",
+   "name": "Binding",
+   "file": "Eclipse Animator/Container/Rigging/Binding.luau",
+   "bytes": 4501,
+   "sha256": "4bd827b5916b7dc09bfe0c0512a33e3ecd59408ed7c8f31869039c4c775a9ff4"
+  },
+  {
+   "referent": 1884,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureConverter",
+   "name": "ArmatureConverter",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureConverter.luau",
+   "bytes": 11707,
+   "sha256": "145eaed593dfef1dacda4fe72ac2907700298d69f7d918dfcde9ba82e0b82e32"
+  },
+  {
+   "referent": 1885,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureBindingPlan",
+   "name": "ArmatureBindingPlan",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureBindingPlan.luau",
+   "bytes": 8179,
+   "sha256": "ff7a2cc171209efdb8a8248c8eaee128342497caf6bc41f8837d73595e81685f"
+  },
+  {
+   "referent": 1886,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigidGeometry",
+   "name": "RigidGeometry",
+   "file": "Eclipse Animator/Container/Rigging/RigidGeometry.luau",
+   "bytes": 16283,
+   "sha256": "db35c9146d274267402fadcce713f30838f3ad437a9e73c302d6c1a3091b1a17"
+  },
+  {
+   "referent": 1887,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Skinning",
+   "name": "Skinning",
+   "file": "Eclipse Animator/Container/Rigging/Skinning.luau",
+   "bytes": 31972,
+   "sha256": "9048e92168f20d89fb99682c7c76670f044453f13e383c39abfe8260d7c72f94"
+  },
+  {
+   "referent": 1888,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureVisibility",
+   "name": "ArmatureVisibility",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureVisibility.luau",
+   "bytes": 2289,
+   "sha256": "a5959174a8eb37e4cc38e76c8fb62e1c66bf7f91d9ccf6f40dc64ab8f29f1681"
+  },
+  {
+   "referent": 1889,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigExport",
+   "name": "RigExport",
+   "file": "Eclipse Animator/Container/Rigging/RigExport.luau",
+   "bytes": 13575,
+   "sha256": "d5ba0b87e559f230b82324c1bfe0c98ed9b7a0dc5fea2a9debb913655fc6b419"
+  },
+  {
+   "referent": 1890,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/CameraRig",
+   "name": "CameraRig",
+   "file": "Eclipse Animator/Container/Rigging/CameraRig.luau",
+   "bytes": 23148,
+   "sha256": "f758f74dd1325669f1ac34338426555aa9146dd26fa22d1153cee076956ad98e"
+  },
+  {
+   "referent": 1891,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Target",
+   "name": "Target",
+   "file": "Eclipse Animator/Container/Rigging/Target.luau",
+   "bytes": 33397,
+   "sha256": "c1e114ca975f37943404e7fd1a80bc61906b91d6499682ddec71560239c8671d"
+  },
+  {
+   "referent": 1892,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/HumanoidScale",
+   "name": "HumanoidScale",
+   "file": "Eclipse Animator/Container/Rigging/HumanoidScale.luau",
+   "bytes": 4479,
+   "sha256": "d29e8018ac13b021d8080eb5a9336f5b62928f1ea77f42230fa96cd79529cf0d"
+  },
+  {
+   "referent": 1893,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigIO",
+   "name": "RigIO",
+   "file": "Eclipse Animator/Container/Rigging/RigIO.luau",
+   "bytes": 12038,
+   "sha256": "69fa4aed30cedbbb2d2750681cc733f300f54fa4a64f70a332d9ef656e66b0a7"
+  },
+  {
+   "referent": 1894,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Rig",
+   "name": "Rig",
+   "file": "Eclipse Animator/Container/Rigging/Rig.luau",
+   "bytes": 4755,
+   "sha256": "3f39aac2ca6170bceea757acaabfdc59b30cbdacbbd4d4f0032ebc2c3a85ab85"
+  },
+  {
+   "referent": 1895,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/LimbSolver",
+   "name": "LimbSolver",
+   "file": "Eclipse Animator/Container/Rigging/LimbSolver.luau",
+   "bytes": 15599,
+   "sha256": "cb0b03be14ceba8e3083f53350afc73e9eeb107cca489d10c3d756c165337db9"
+  },
+  {
+   "referent": 1896,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/rig",
+   "name": "rig",
+   "file": "Eclipse Animator/Container/Rigging/rig.luau",
+   "bytes": 21501,
+   "sha256": "8fccb4e032fd7ff36c749d863a40859158bf2d762f3ceb1fce2a7c26a7fa2121"
+  },
+  {
+   "referent": 1897,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/NativeJoints",
+   "name": "NativeJoints",
+   "file": "Eclipse Animator/Container/Rigging/NativeJoints.luau",
+   "bytes": 8943,
+   "sha256": "7d3e0593a18f79f7805e4936c26f098d2adb6115d783e39514012221a802f5e1"
+  },
+  {
+   "referent": 1898,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ParentingUI",
+   "name": "ParentingUI",
+   "file": "Eclipse Animator/Container/Rigging/ParentingUI.luau",
+   "bytes": 1241,
+   "sha256": "06cce361634c6a83e5c058ab499563c3bbc98bb5ab6754d4527251ec0a8c0713"
+  },
+  {
+   "referent": 1899,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/PartRig",
+   "name": "PartRig",
+   "file": "Eclipse Animator/Container/Rigging/PartRig.luau",
+   "bytes": 5973,
+   "sha256": "e4b156b5f2588873381e2e1d1a158a373733ebc5e9fdd7583063a3e70b6bca5f"
+  },
+  {
+   "referent": 1900,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigPose",
+   "name": "RigPose",
+   "file": "Eclipse Animator/Container/Rigging/RigPose.luau",
+   "bytes": 14398,
+   "sha256": "2f10441315012586f89249bf601ad972a92de1fd585f8f2cae37f3cdf7377c8c"
+  },
+  {
+   "referent": 1901,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigTraversal",
+   "name": "RigTraversal",
+   "file": "Eclipse Animator/Container/Rigging/RigTraversal.luau",
+   "bytes": 5878,
+   "sha256": "4824ceabae62b583d6cc94c53f2ca482e2e361d8cff4d8b5fed0ad6b0d9b7678"
+  },
+  {
+   "referent": 1902,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/SelectedRig",
+   "name": "SelectedRig",
+   "file": "Eclipse Animator/Container/Rigging/SelectedRig.luau",
+   "bytes": 1465,
+   "sha256": "71fc64a594d733622487624088c0b05a3b446641b4668914451f50a61452a982"
+  },
+  {
+   "referent": 1903,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/SoftIK",
+   "name": "SoftIK",
+   "file": "Eclipse Animator/Container/Rigging/SoftIK.luau",
+   "bytes": 1165,
+   "sha256": "a6d3b2fa7e853f2c898f085966937677b480c8f4b30806ca65abe18c3d25c3fa"
+  },
+  {
+   "referent": 1904,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Hierarchy",
+   "name": "Hierarchy",
+   "file": "Eclipse Animator/Container/Rigging/Hierarchy.luau",
+   "bytes": 46106,
+   "sha256": "aa0e6bf05385bb90c2c5ef2ebe59f718f39b034996e70b7838f050d88d597480"
+  },
+  {
+   "referent": 1905,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigCleanup",
+   "name": "RigCleanup",
+   "file": "Eclipse Animator/Container/Rigging/RigCleanup.luau",
+   "bytes": 2545,
+   "sha256": "71d8a2d75324cc4b4cf4d4536e77e40fff795c555aac31ed0781ddffed1b4b38"
+  },
+  {
+   "referent": 1906,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureImport",
+   "name": "ArmatureImport",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureImport.luau",
+   "bytes": 45515,
+   "sha256": "d21b93aafec8ff62117df983ebb56e3986b3dc1b0f52653c6980f76d244410c5"
+  },
+  {
+   "referent": 1907,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureRemoval",
+   "name": "ArmatureRemoval",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureRemoval.luau",
+   "bytes": 4636,
+   "sha256": "42db7afb60a68f34992611b5ec0e54d9ecb807358eb5a9d77c6cecd11e86f019"
+  },
+  {
+   "referent": 1908,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/MotorMath",
+   "name": "MotorMath",
+   "file": "Eclipse Animator/Container/Rigging/MotorMath.luau",
+   "bytes": 4947,
+   "sha256": "1f7d792c59cb704e01161737383c6623646d7c370ce2a24cb36c9bcf0b26e7ea"
+  },
+  {
+   "referent": 1909,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Bindings",
+   "name": "Bindings",
+   "file": "Eclipse Animator/Container/Rigging/Bindings.luau",
+   "bytes": 21219,
+   "sha256": "5b49052a7c3ea110f7a0259e6a38aa2ad7b5473745fcd50ec354cd27e4722212"
+  },
+  {
+   "referent": 1910,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureAnimation",
+   "name": "ArmatureAnimation",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureAnimation.luau",
+   "bytes": 13376,
+   "sha256": "39530b573630c8b7d920828fc8c1a440e373520d4f193a0019acd88694ca0eff"
+  },
+  {
+   "referent": 1911,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmaturePropertiesEditor",
+   "name": "ArmaturePropertiesEditor",
+   "file": "Eclipse Animator/Container/Rigging/ArmaturePropertiesEditor.luau",
+   "bytes": 17843,
+   "sha256": "fd4238b342d328fd4941a1ca967151c28bb89903fc0a7c843d548991f061f4cb"
+  },
+  {
+   "referent": 1912,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureRuntime",
+   "name": "ArmatureRuntime",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureRuntime.luau",
+   "bytes": 88839,
+   "sha256": "8ba15d3a2809c74bb9915ebf7f7cbb66e299d96f13a0ebfc0ef73dbd2ad0164d"
+  },
+  {
+   "referent": 1913,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BoneIK",
+   "name": "BoneIK",
+   "file": "Eclipse Animator/Container/Rigging/BoneIK.luau",
+   "bytes": 39176,
+   "sha256": "b79d58483aeb5723e2785bd631495cab73826cd163923fa08bac0407aa8eee82"
+  },
+  {
+   "referent": 1914,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Targets",
+   "name": "Targets",
+   "file": "Eclipse Animator/Container/Rigging/Targets.luau",
+   "bytes": 53685,
+   "sha256": "071aeffa192bbde9c911a8aba3b3dc5d048c472d94efded1b4bb48a0f316a846"
+  },
+  {
+   "referent": 1915,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ArmatureWorkflow",
+   "name": "ArmatureWorkflow",
+   "file": "Eclipse Animator/Container/Rigging/ArmatureWorkflow.luau",
+   "bytes": 7664,
+   "sha256": "e51f993acd0f9dae4459f7aaf0bb58544db8cfcc278c59fc443816a8e4cb34f8"
+  },
+  {
+   "referent": 1916,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/LimbControls",
+   "name": "LimbControls",
+   "file": "Eclipse Animator/Container/Rigging/LimbControls.luau",
+   "bytes": 8477,
+   "sha256": "513f0a5f726da6ee4e2ac58b13eb3aea50fbaa5cf0b62fd0ce8c06451fe18588"
+  },
+  {
+   "referent": 1917,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/LimbIK",
+   "name": "LimbIK",
+   "file": "Eclipse Animator/Container/Rigging/LimbIK.luau",
+   "bytes": 69909,
+   "sha256": "52e97020de885bc5941bc4c685045e29c0750be2f78168f19f772f23edbfc692"
+  },
+  {
+   "referent": 1918,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Origin",
+   "name": "Origin",
+   "file": "Eclipse Animator/Container/Rigging/Origin.luau",
+   "bytes": 15561,
+   "sha256": "7ee72e144adba5205440fe6661f0eb99087b9c95eb3cc1ac0390d3344d51de3a"
+  },
+  {
+   "referent": 1919,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Parenting",
+   "name": "Parenting",
+   "file": "Eclipse Animator/Container/Rigging/Parenting.luau",
+   "bytes": 18761,
+   "sha256": "b53baa43eaafd8005500867c1c90bdfc51b9731132edbaba553fc8e3c83a6c51"
+  },
+  {
+   "referent": 1920,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/PartRigging",
+   "name": "PartRigging",
+   "file": "Eclipse Animator/Container/Rigging/PartRigging.luau",
+   "bytes": 15444,
+   "sha256": "aacbf5988a97f280b79fef494099e49d91e57ae6f3496cca51acf51c905f2dd9"
+  },
+  {
+   "referent": 1921,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Forces",
+   "name": "Forces",
+   "file": "Eclipse Animator/Container/Rigging/Forces.luau",
+   "bytes": 14599,
+   "sha256": "80976e6712f5a562b1861815c338f0cab819f85b38ac2ebaeca7993fc0159e93"
+  },
+  {
+   "referent": 1922,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/RigStatic",
+   "name": "RigStatic",
+   "file": "Eclipse Animator/Container/Rigging/RigStatic.luau",
+   "bytes": 76544,
+   "sha256": "d58d8fb15cd7a6b40808f51aa0a46b8c56b93f0be8d4b667a69e052c761abb63"
+  },
+  {
+   "referent": 1923,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/IKKeyframing",
+   "name": "IKKeyframing",
+   "file": "Eclipse Animator/Container/Rigging/IKKeyframing.luau",
+   "bytes": 9371,
+   "sha256": "b6fcd6c2c22ac36bb139afa0316066c40806b09b88be8aeef4f6835a527b6c07"
+  },
+  {
+   "referent": 1924,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/ParentingKeyframes",
+   "name": "ParentingKeyframes",
+   "file": "Eclipse Animator/Container/Rigging/ParentingKeyframes.luau",
+   "bytes": 5759,
+   "sha256": "4b6bc04dccb334d5266b99fb2ed83cf49a763d34eb77226432e991d76c9807c4"
+  },
+  {
+   "referent": 1925,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/IKPanel",
+   "name": "IKPanel",
+   "file": "Eclipse Animator/Container/Rigging/IKPanel.luau",
+   "bytes": 9465,
+   "sha256": "0cd4d1b0eb3fd18e8ee115dc52679d4efd7e82e632fac98e9716c011db7bc6cb"
+  },
+  {
+   "referent": 1926,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Dynamics",
+   "name": "Dynamics",
+   "file": "Eclipse Animator/Container/Rigging/Dynamics.luau",
+   "bytes": 9121,
+   "sha256": "574d4e27f62cd1c2020890dddb1c6f1575c8fe001fe5558ced9f6491bccd4847"
+  },
+  {
+   "referent": 1927,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/dynamics",
+   "name": "dynamics",
+   "file": "Eclipse Animator/Container/Rigging/dynamics.luau",
+   "bytes": 21956,
+   "sha256": "3d0b2a403da33dc88d27f17516ba7436c4d2f0be8d4192b7ebaa6d4bd935c098"
+  },
+  {
+   "referent": 1928,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/GraphModel",
+   "name": "GraphModel",
+   "file": "Eclipse Animator/Container/Rigging/GraphModel.luau",
+   "bytes": 56010,
+   "sha256": "0c0d72404e38164d2df21e89851f7865372c89d769d8bbf238ed0b551903d364"
+  },
+  {
+   "referent": 1929,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/GraphPhysics",
+   "name": "GraphPhysics",
+   "file": "Eclipse Animator/Container/Rigging/GraphPhysics.luau",
+   "bytes": 12928,
+   "sha256": "4868e7bcbe7c166465a8c7121d830829d10fc062e6db6e4418a726ffb752441b"
+  },
+  {
+   "referent": 1930,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Constraints",
+   "name": "Constraints",
+   "file": "Eclipse Animator/Container/Rigging/Constraints.luau",
+   "bytes": 18273,
+   "sha256": "efdfcf702c4827a5b612486830b5ef50b529873e10b025a93c5e84a2b5f5b380"
+  },
+  {
+   "referent": 1931,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Drivers",
+   "name": "Drivers",
+   "file": "Eclipse Animator/Container/Rigging/Drivers.luau",
+   "bytes": 13964,
+   "sha256": "b9b4262fa19e8336573a8e65d10060a3b2331891e6d7d72e843e9890c06883d0"
+  },
+  {
+   "referent": 1932,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Appearance",
+   "name": "Appearance",
+   "file": "Eclipse Animator/Container/Rigging/Appearance.luau",
+   "bytes": 10463,
+   "sha256": "575f9670abfda0b85fed2cd3369ac8c809cf9b24204d0b5f274fb5955b618447"
+  },
+  {
+   "referent": 1933,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Bones",
+   "name": "Bones",
+   "file": "Eclipse Animator/Container/Rigging/Bones.luau",
+   "bytes": 4611,
+   "sha256": "3649a1b79ca25dc46718a1d5e5e6a7cc1835efbea97ac276513b8521c287b7cb"
+  },
+  {
+   "referent": 1934,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Model",
+   "name": "Model",
+   "file": "Eclipse Animator/Container/Rigging/Model.luau",
+   "bytes": 5898,
+   "sha256": "1d614e8fc5335596eb6eac90275e0f9dda5c8bc059526123a87266639c437b75"
+  },
+  {
+   "referent": 1935,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Resolve",
+   "name": "Resolve",
+   "file": "Eclipse Animator/Container/Rigging/Resolve.luau",
+   "bytes": 951,
+   "sha256": "de88c5668416a6a4559f42675b2da3eb9fca85c7c08e1d3bfbcd33eae75f1446"
+  },
+  {
+   "referent": 1936,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/motors",
+   "name": "motors",
+   "file": "Eclipse Animator/Container/Rigging/motors.luau",
+   "bytes": 22927,
+   "sha256": "5654a24f4a09203d08b90fea51de17bb63bed175356b5ec1d459a95132a04be4"
+  },
+  {
+   "referent": 1937,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Simulation",
+   "name": "Simulation",
+   "file": "Eclipse Animator/Container/Rigging/Simulation.luau",
+   "bytes": 25038,
+   "sha256": "cb058ac90359612906f7278e284cbe096ef59502ee8ae8c7378ea43966bdf96b"
+  },
+  {
+   "referent": 1938,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/PivotSpace",
+   "name": "PivotSpace",
+   "file": "Eclipse Animator/Container/Rigging/PivotSpace.luau",
+   "bytes": 5030,
+   "sha256": "f330c02d2c0428d21d7369bf6c91a8893362da641b46df887961cf045b335669"
+  },
+  {
+   "referent": 1939,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/TorsoSolver",
+   "name": "TorsoSolver",
+   "file": "Eclipse Animator/Container/Rigging/TorsoSolver.luau",
+   "bytes": 1262,
+   "sha256": "abca60c2029c85c315406d586132b6495db82924329ec3908f22100f494b70ee"
+  },
+  {
+   "referent": 1940,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Import",
+   "name": "Import",
+   "file": "Eclipse Animator/Container/Rigging/Import.luau",
+   "bytes": 6103,
+   "sha256": "c13eaf860844e77e91ef787d079a2a6530e034b69fd417bddabcf98170d88628"
+  },
+  {
+   "referent": 1941,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Avatar",
+   "name": "Avatar",
+   "file": "Eclipse Animator/Container/Rigging/Avatar.luau",
+   "bytes": 11525,
+   "sha256": "4c85729b01fd4980d73555770739575aaf8d02e2daff6065530eab39393beb23"
+  },
+  {
+   "referent": 1942,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/AxisStatic",
+   "name": "AxisStatic",
+   "file": "Eclipse Animator/Container/Rigging/AxisStatic.luau",
+   "bytes": 128126,
+   "sha256": "5b1b660880ca72d6de0c95722a2eb9821b644518a8eb33cf4b808c1b43324ee4"
+  },
+  {
+   "referent": 1943,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BlenderBridge",
+   "name": "BlenderBridge",
+   "file": "Eclipse Animator/Container/Rigging/BlenderBridge.luau",
+   "bytes": 18411,
+   "sha256": "a2569002d52558b40ef48c892aae02ef53b15483beebf661716d7d39da5d7d16"
+  },
+  {
+   "referent": 1944,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BlenderImport",
+   "name": "BlenderImport",
+   "file": "Eclipse Animator/Container/Rigging/BlenderImport.luau",
+   "bytes": 37094,
+   "sha256": "244803b06ed5c822ec784b8dbd457f85a9da6a2916c456f4bf55c1ce47ceaba4"
+  },
+  {
+   "referent": 1945,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BoneMotor",
+   "name": "BoneMotor",
+   "file": "Eclipse Animator/Container/Rigging/BoneMotor.luau",
+   "bytes": 6070,
+   "sha256": "2f02ad398a53a381ad00ac329b155913ad036f23ddcf13bf9961490ff20f4ab3"
+  },
+  {
+   "referent": 1946,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Orientation",
+   "name": "Orientation",
+   "file": "Eclipse Animator/Container/Rigging/Orientation.luau",
+   "bytes": 1287,
+   "sha256": "b9f410fd0568f8ec3aa0d37acd40374f1fb8e488410a6a21a60e7729f7e787de"
+  },
+  {
+   "referent": 1947,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Faces",
+   "name": "Faces",
+   "file": "Eclipse Animator/Container/Rigging/Faces.luau",
+   "bytes": 17231,
+   "sha256": "ff43710164044c4e6dff65ad1f757f298b7428941bcae43746318e8067d7fd67"
+  },
+  {
+   "referent": 1948,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/HeadStabilizer",
+   "name": "HeadStabilizer",
+   "file": "Eclipse Animator/Container/Rigging/HeadStabilizer.luau",
+   "bytes": 7157,
+   "sha256": "7579a43452435e3465c7b8b28783047660da33e411bff1bb817f1d9d2011dd22"
+  },
+  {
+   "referent": 1949,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/AutoGetMotor6D",
+   "name": "AutoGetMotor6D",
+   "file": "Eclipse Animator/Container/Rigging/AutoGetMotor6D.luau",
+   "bytes": 524,
+   "sha256": "48bf8744475574b2116b0515c411b4e58202e147fc1741d3dd553174a0ca7f18"
+  },
+  {
+   "referent": 1950,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/MasterControl",
+   "name": "MasterControl",
+   "file": "Eclipse Animator/Container/Rigging/MasterControl.luau",
+   "bytes": 13331,
+   "sha256": "c9188c81fe5b28a0f83e175c81907c3372a0abf43c4ac7fc46b720aa1a52d2d6"
+  },
+  {
+   "referent": 1951,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Physics",
+   "name": "Physics",
+   "file": "Eclipse Animator/Container/Rigging/Physics.luau",
+   "bytes": 23213,
+   "sha256": "e1de5c502bf0e9ae57778a877a80c1d496481b7fa5731a4cac02f81b58899f0a"
+  },
+  {
+   "referent": 1952,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/R6Controls",
+   "name": "R6Controls",
+   "file": "Eclipse Animator/Container/Rigging/R6Controls.luau",
+   "bytes": 13313,
+   "sha256": "442055d8ab9f1ef46613c82ca10ace8ab334590e0d02bf913b8393fb18211e35"
+  },
+  {
+   "referent": 1953,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/Accessories",
+   "name": "Accessories",
+   "file": "Eclipse Animator/Container/Rigging/Accessories.luau",
+   "bytes": 8360,
+   "sha256": "f4cf4dc16c5882adbdac4d23e13e87d6b58388a865f28e5105c9417dcddc0e0d"
+  },
+  {
+   "referent": 1954,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/customRest",
+   "name": "customRest",
+   "file": "Eclipse Animator/Container/Rigging/customRest.luau",
+   "bytes": 16285,
+   "sha256": "83309db40b114375e867000839c1da7adcc30229dcc20516cfebc8b52d5a18bb"
+  },
+  {
+   "referent": 1955,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/SmartBone",
+   "name": "SmartBone",
+   "file": "Eclipse Animator/Container/Rigging/SmartBone.luau",
+   "bytes": 13555,
+   "sha256": "fb592163c8b2f94651e48bd23f30edeba48e319ad4961594924fddeeda491db1"
+  },
+  {
+   "referent": 1956,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BlenderCurve",
+   "name": "BlenderCurve",
+   "file": "Eclipse Animator/Container/Rigging/BlenderCurve.luau",
+   "bytes": 12209,
+   "sha256": "9ea624f03e42f965c87d6254bfe9dc2c654686fa2a3288be97ce518e4f14ab2f"
+  },
+  {
+   "referent": 1957,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/BlenderEdit",
+   "name": "BlenderEdit",
+   "file": "Eclipse Animator/Container/Rigging/BlenderEdit.luau",
+   "bytes": 503,
+   "sha256": "118cfeb37f9ef16bcdd82ccc0bf99035e95a51509c7106f26cced59057351c77"
+  },
+  {
+   "referent": 1958,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Rigging/PhysicsWindow",
+   "name": "PhysicsWindow",
+   "file": "Eclipse Animator/Container/Rigging/PhysicsWindow.luau",
+   "bytes": 28331,
+   "sha256": "22819d21e92738d23da510944f48de3183ed7203d0f9e63c0a1c2ffad2addd47"
+  },
+  {
+   "referent": 1960,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/MeshDisplay",
+   "name": "MeshDisplay",
+   "file": "Eclipse Animator/Container/Geometry/MeshDisplay.luau",
+   "bytes": 2260,
+   "sha256": "ad4100a4c8ee4b2efd8f96f8c509c682551ac21f375d3713d476615fb3e20d3a"
+  },
+  {
+   "referent": 1961,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/ObjectGeometry",
+   "name": "ObjectGeometry",
+   "file": "Eclipse Animator/Container/Geometry/ObjectGeometry.luau",
+   "bytes": 11841,
+   "sha256": "8735338f4b50ba4075ec8e9ecdff5037b3ed1fdd02d46b3c50c9a1064b3acee3"
+  },
+  {
+   "referent": 1962,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/Geometry",
+   "name": "Geometry",
+   "file": "Eclipse Animator/Container/Geometry/Geometry.luau",
+   "bytes": 3091,
+   "sha256": "b5e86656d65581a571b1b78037621f12818593c2451eb480c2230ed869f19aaf"
+  },
+  {
+   "referent": 1963,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/snapshot",
+   "name": "snapshot",
+   "file": "Eclipse Animator/Container/Geometry/snapshot.luau",
+   "bytes": 9743,
+   "sha256": "e5200dab7f6b49bbafc293b5e3183f3c4502d1a7328fab284718ad828dc1f26e"
+  },
+  {
+   "referent": 1964,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/Adapter",
+   "name": "Adapter",
+   "file": "Eclipse Animator/Container/Geometry/Adapter.luau",
+   "bytes": 24248,
+   "sha256": "8f1d592bb96914c6bc5d85446f18c9c0d71660eeb71ee3bb5ad6c03309056535"
+  },
+  {
+   "referent": 1965,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/geometry",
+   "name": "geometry",
+   "file": "Eclipse Animator/Container/Geometry/geometry.luau",
+   "bytes": 6425,
+   "sha256": "7c69d3c7b26b45f950b847a6cb0334c24aa88c009467e10be1a1b2012dbb9593"
+  },
+  {
+   "referent": 1966,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/MeshAccess",
+   "name": "MeshAccess",
+   "file": "Eclipse Animator/Container/Geometry/MeshAccess.luau",
+   "bytes": 1719,
+   "sha256": "c8b052d4aae0efb592d00ffe25a5cdd5c908f57291ca7f8b03fde40529efefdb"
+  },
+  {
+   "referent": 1967,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Geometry/distance",
+   "name": "distance",
+   "file": "Eclipse Animator/Container/Geometry/distance.luau",
+   "bytes": 17068,
+   "sha256": "7f0a10abe1f06e75fbbe958046d8ae9c4ca7e1922e42c9a666e891169a76288a"
+  },
+  {
+   "referent": 1969,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/SceneCodec",
+   "name": "SceneCodec",
+   "file": "Eclipse Animator/Container/Camera/SceneCodec.luau",
+   "bytes": 20039,
+   "sha256": "04c6b6646714e10964b10d97b2d40619003de1227a61466d4b52639292f5f4fa"
+  },
+  {
+   "referent": 1970,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/CameraDisplay",
+   "name": "CameraDisplay",
+   "file": "Eclipse Animator/Container/Camera/CameraDisplay.luau",
+   "bytes": 10322,
+   "sha256": "ff1bd5a15d8057b92c2048e7e2b73ced1522867b4df7d38f78ada1eb1ccb296d"
+  },
+  {
+   "referent": 1971,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/Environment",
+   "name": "Environment",
+   "file": "Eclipse Animator/Container/Camera/Environment.luau",
+   "bytes": 25201,
+   "sha256": "cc5e27bc77ed1b43b9c76ac8e90a99c271536dac688ab52aef83e646ecc4ef8b"
+  },
+  {
+   "referent": 1972,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/CameraControls",
+   "name": "CameraControls",
+   "file": "Eclipse Animator/Container/Camera/CameraControls.luau",
+   "bytes": 8271,
+   "sha256": "20d7ef53bd15900b69b774b30a4fa61ed7c01616c5f2b8e2db5351da22833ad3"
+  },
+  {
+   "referent": 1973,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/CameraPreview",
+   "name": "CameraPreview",
+   "file": "Eclipse Animator/Container/Camera/CameraPreview.luau",
+   "bytes": 49941,
+   "sha256": "b75bd6f842bfcea83ef887a7cc46acc2ad77bdcf35981cc62c312be93d468683"
+  },
+  {
+   "referent": 1974,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/SceneSync",
+   "name": "SceneSync",
+   "file": "Eclipse Animator/Container/Camera/SceneSync.luau",
+   "bytes": 15449,
+   "sha256": "dc8de54a33e42869a793c95b7a154c9fc6c5fd98111b3379a3aaf45de0045dd6"
+  },
+  {
+   "referent": 1975,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/Scene",
+   "name": "Scene",
+   "file": "Eclipse Animator/Container/Camera/Scene.luau",
+   "bytes": 23991,
+   "sha256": "04aa0b62770f9f4fc0641f818b65c947cd6d51fa7ed8c9bb07778ffd3dd38596"
+  },
+  {
+   "referent": 1976,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/PropertyGizmo",
+   "name": "PropertyGizmo",
+   "file": "Eclipse Animator/Container/Camera/PropertyGizmo.luau",
+   "bytes": 19301,
+   "sha256": "52ff41c3f81a56c5ee8a4c29af1ba2be0b4ebd67b394e00ff9dee2c27b6e46ff"
+  },
+  {
+   "referent": 1977,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/CameraKeyframing",
+   "name": "CameraKeyframing",
+   "file": "Eclipse Animator/Container/Camera/CameraKeyframing.luau",
+   "bytes": 78455,
+   "sha256": "ba48dda7fd8d9fdf286296222118953d8601c4dc9d9c81027cbfc8e4c93eddec"
+  },
+  {
+   "referent": 1978,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/CameraGraph",
+   "name": "CameraGraph",
+   "file": "Eclipse Animator/Container/Camera/CameraGraph.luau",
+   "bytes": 30977,
+   "sha256": "dc36d202bd9f463b3cd6cdb4e2bfcb1ae9839cbc3e4f845dbf8aaad7ee358ec7"
+  },
+  {
+   "referent": 1979,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/localOffset",
+   "name": "localOffset",
+   "file": "Eclipse Animator/Container/Camera/localOffset.luau",
+   "bytes": 6445,
+   "sha256": "f53c05dd170c024d4a66ff04a04578ed956c95e17e5e9128517d6e2e2ee5c1a1"
+  },
+  {
+   "referent": 1980,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Camera/fov",
+   "name": "fov",
+   "file": "Eclipse Animator/Container/Camera/fov.luau",
+   "bytes": 5576,
+   "sha256": "29717e9ac7a7aa04a778f296719a35dd3042a7428ade5516f40d4e41b58a6449"
+  },
+  {
+   "referent": 1982,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/writer",
+   "name": "writer",
+   "file": "Eclipse Animator/Container/Core/writer.luau",
+   "bytes": 4175,
+   "sha256": "6c16f880e79b235477c689acdaf0e3c3942654661a39b949d9bf95cd41c3d6c3"
+  },
+  {
+   "referent": 1983,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/writer/EclipseExportFOVSample",
+   "name": "EclipseExportFOVSample",
+   "file": "Eclipse Animator/Container/Core/writer/EclipseExportFOVSample.luau",
+   "bytes": 1128,
+   "sha256": "8d15d55e2d64cca1bda0e2501c1ac9414278726496767de258d7afa367f82916"
+  },
+  {
+   "referent": 1984,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/SelectionBridge",
+   "name": "SelectionBridge",
+   "file": "Eclipse Animator/Container/Core/SelectionBridge.luau",
+   "bytes": 4256,
+   "sha256": "dbd9b5a7d27976fd90d6a42844cd645f512539e8d4c185474efef005c8885a99"
+  },
+  {
+   "referent": 1985,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Objects",
+   "name": "Objects",
+   "file": "Eclipse Animator/Container/Core/Objects.luau",
+   "bytes": 21964,
+   "sha256": "59d47c1526506d398d9c39f6c12c83b717c1ca7e340a5b4907a27332d010980b"
+  },
+  {
+   "referent": 1986,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Focus",
+   "name": "Focus",
+   "file": "Eclipse Animator/Container/Core/Focus.luau",
+   "bytes": 5696,
+   "sha256": "3c7cfd6dc22c1f95e85e8effee08d27bbaa413c2ebda861ca0ff6aed63b5b615"
+  },
+  {
+   "referent": 1987,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Policy",
+   "name": "Policy",
+   "file": "Eclipse Animator/Container/Core/Policy.luau",
+   "bytes": 5037,
+   "sha256": "1e3bc80547808c42ec00f0b46b5704960f3b057700a1ccee65e0f4a83cb43b25"
+  },
+  {
+   "referent": 1988,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Properties",
+   "name": "Properties",
+   "file": "Eclipse Animator/Container/Core/Properties.luau",
+   "bytes": 36701,
+   "sha256": "4d66a2d1d6c5eb52e8c37cb570843b046f1b6a9b8eae4c621df94f7392ca5a9f"
+  },
+  {
+   "referent": 1989,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Boot",
+   "name": "Boot",
+   "file": "Eclipse Animator/Container/Core/Boot.luau",
+   "bytes": 13853,
+   "sha256": "2584d390072eb503b6e7c507e63220d2722e20b02ea505a63b42a043cf0c3c2d"
+  },
+  {
+   "referent": 1990,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Connections",
+   "name": "Connections",
+   "file": "Eclipse Animator/Container/Core/Connections.luau",
+   "bytes": 33881,
+   "sha256": "e85d32029d093c5dfae29e6ba720a4c13a03266dc4ec7b9674869b530c07f209"
+  },
+  {
+   "referent": 1991,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/EditActions",
+   "name": "EditActions",
+   "file": "Eclipse Animator/Container/Core/EditActions.luau",
+   "bytes": 2672,
+   "sha256": "8899a96e421757966eb07fbcb01f5c1ede5723f5dc6c103d63b4729a39e034d2"
+  },
+  {
+   "referent": 1992,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/ModuleInit",
+   "name": "ModuleInit",
+   "file": "Eclipse Animator/Container/Core/ModuleInit.luau",
+   "bytes": 25672,
+   "sha256": "78b2bcbea52d3d05e90c827e70814e5da32bbaf12c67eafe0cc5cc8c108f0c4c"
+  },
+  {
+   "referent": 1993,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/PluginShell",
+   "name": "PluginShell",
+   "file": "Eclipse Animator/Container/Core/PluginShell.luau",
+   "bytes": 7857,
+   "sha256": "6207c0980db17fc8972859115e82d61e0b210d1d93625f2a9578243fa8543eb4"
+  },
+  {
+   "referent": 1994,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Visibility",
+   "name": "Visibility",
+   "file": "Eclipse Animator/Container/Core/Visibility.luau",
+   "bytes": 15683,
+   "sha256": "0dc17ead6c6d1585fa7d2ebe7251c179e20dae0057f086843aa6569b1e46137a"
+  },
+  {
+   "referent": 1995,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Defaults",
+   "name": "Defaults",
+   "file": "Eclipse Animator/Container/Core/Defaults.luau",
+   "bytes": 475,
+   "sha256": "0bcd8d1e72727a03bcc81a4e73f6d8168aeec735e46026d187618ff1cf6be10e"
+  },
+  {
+   "referent": 1996,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/State",
+   "name": "State",
+   "file": "Eclipse Animator/Container/Core/State.luau",
+   "bytes": 2113,
+   "sha256": "003d455d520c5399ff7617fddd641404f83bb3825cc00a3c0fab9b9151f73b3d"
+  },
+  {
+   "referent": 1997,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/AnimationCleanup",
+   "name": "AnimationCleanup",
+   "file": "Eclipse Animator/Container/Core/AnimationCleanup.luau",
+   "bytes": 25815,
+   "sha256": "5d8980b30774ae0f94a5472dadfa17e16b8a052d821cf9161eada846df5a36b1"
+  },
+  {
+   "referent": 1998,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/ObjectEditing",
+   "name": "ObjectEditing",
+   "file": "Eclipse Animator/Container/Core/ObjectEditing.luau",
+   "bytes": 10690,
+   "sha256": "0c64a136eb2226ae38a90bfa06855a4e581e6158c167d6a9128ae304483d1061"
+  },
+  {
+   "referent": 1999,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Editor",
+   "name": "Editor",
+   "file": "Eclipse Animator/Container/Core/Editor.luau",
+   "bytes": 25426,
+   "sha256": "5bc72bc4d5dbdbe6e7585d978cf1b3c4737d0556714d7bd28e77bdf55c1987fe"
+  },
+  {
+   "referent": 2000,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Bridge",
+   "name": "Bridge",
+   "file": "Eclipse Animator/Container/Core/Bridge.luau",
+   "bytes": 10514,
+   "sha256": "a31a4b4a9ce2071351988e8c079606cf568541a3989be8902dfbb1d9085d9106"
+  },
+  {
+   "referent": 2001,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/History",
+   "name": "History",
+   "file": "Eclipse Animator/Container/Core/History.luau",
+   "bytes": 9544,
+   "sha256": "c8246c85f69a13cf1ec605154151db751aec33ab4cb099bae4121c58ac6245a2"
+  },
+  {
+   "referent": 2002,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/baseItem",
+   "name": "baseItem",
+   "file": "Eclipse Animator/Container/Core/baseItem.luau",
+   "bytes": 48298,
+   "sha256": "651eff8f9d108748db0613aa2e84c548e463e1052fcfde0282e1783a0e08d0e5"
+  },
+  {
+   "referent": 2003,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Preferences",
+   "name": "Preferences",
+   "file": "Eclipse Animator/Container/Core/Preferences.luau",
+   "bytes": 19675,
+   "sha256": "17e15d5a2b91d5d601127e414bdaa490005c40e434cd5cdb675b129142b721d1"
+  },
+  {
+   "referent": 2004,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/PreferencesEditor",
+   "name": "PreferencesEditor",
+   "file": "Eclipse Animator/Container/Core/PreferencesEditor.luau",
+   "bytes": 54897,
+   "sha256": "615130a8937735dbb853fff5b2068f9c3702a9e14462f8206e84ce4ed7bbd001"
+  },
+  {
+   "referent": 2005,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/PropertySettings",
+   "name": "PropertySettings",
+   "file": "Eclipse Animator/Container/Core/PropertySettings.luau",
+   "bytes": 13296,
+   "sha256": "52e1c73f4d8081687a75292b73364c75f37dea4abacf8e04ecbf9ac8190afc2e"
+  },
+  {
+   "referent": 2006,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/PropertyEditing",
+   "name": "PropertyEditing",
+   "file": "Eclipse Animator/Container/Core/PropertyEditing.luau",
+   "bytes": 8784,
+   "sha256": "a8cca1df5eba21cb3917df27009be4067d7618fb5c52fbfe1e57b08fa2a7df75"
+  },
+  {
+   "referent": 2007,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/RawState",
+   "name": "RawState",
+   "file": "Eclipse Animator/Container/Core/RawState.luau",
+   "bytes": 2541,
+   "sha256": "d12bb389cc62bad5cf0f25262407b92c4e75378c42be0347a5dbb38fa059593c"
+  },
+  {
+   "referent": 2008,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Organization",
+   "name": "Organization",
+   "file": "Eclipse Animator/Container/Core/Organization.luau",
+   "bytes": 36433,
+   "sha256": "4fbd72cbdab2cbb6280ee0d56653380ddad4c4c45b5f6605bfa91f224c3d616b"
+  },
+  {
+   "referent": 2009,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Batch",
+   "name": "Batch",
+   "file": "Eclipse Animator/Container/Core/Batch.luau",
+   "bytes": 3400,
+   "sha256": "74e7b113e94e45f636176e3151177f71101a608f0766c923e4dce7757c22fbfd"
+  },
+  {
+   "referent": 2010,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Mods",
+   "name": "Mods",
+   "file": "Eclipse Animator/Container/Core/Mods.luau",
+   "bytes": 43410,
+   "sha256": "84e391874d7f295119afdac4cc960242c2bfc65b6db8f742d35e51951848dc1a"
+  },
+  {
+   "referent": 2011,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/list",
+   "name": "list",
+   "file": "Eclipse Animator/Container/Core/list.luau",
+   "bytes": 7099,
+   "sha256": "f1f8b88d4fea12e841547545c7c23f7af14faad6082aa03813c8fc3b72f1337f"
+  },
+  {
+   "referent": 2012,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/context",
+   "name": "context",
+   "file": "Eclipse Animator/Container/Core/context.luau",
+   "bytes": 10972,
+   "sha256": "c530f36474d022f16c87459f53ab103e7651c2299f613bf62ebc7136d3082d24"
+  },
+  {
+   "referent": 2013,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/root",
+   "name": "root",
+   "file": "Eclipse Animator/Container/Core/root.luau",
+   "bytes": 1977,
+   "sha256": "69f5313c4e10047257e0120a1d88cff1701343a9d0f2dafd9630bf4cc861ab29"
+  },
+  {
+   "referent": 2014,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/makeLegacy",
+   "name": "makeLegacy",
+   "file": "Eclipse Animator/Container/Core/makeLegacy.luau",
+   "bytes": 260686,
+   "sha256": "321d0c5b42ca11ba1f71f749e9ed0c82320dce01b34e7b300a7356e0b0d0b210"
+  },
+  {
+   "referent": 2015,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Activity",
+   "name": "Activity",
+   "file": "Eclipse Animator/Container/Core/Activity.luau",
+   "bytes": 1315,
+   "sha256": "d560f7ead90eb79670f4bd87ba9d72f89cc5f2851233058e4f74978ab1aac49a"
+  },
+  {
+   "referent": 2016,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Outline",
+   "name": "Outline",
+   "file": "Eclipse Animator/Container/Core/Outline.luau",
+   "bytes": 2139,
+   "sha256": "59bcd27ca4d9fae8a7e6d219a534805d6484741750c4b92199aa414464a547e6"
+  },
+  {
+   "referent": 2017,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Cache",
+   "name": "Cache",
+   "file": "Eclipse Animator/Container/Core/Cache.luau",
+   "bytes": 9619,
+   "sha256": "0068c3af9bf59ccf09706593e9f6b0aca063f4a09ab808c012f7ed8beef1e64f"
+  },
+  {
+   "referent": 2018,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Behavior",
+   "name": "Behavior",
+   "file": "Eclipse Animator/Container/Core/Behavior.luau",
+   "bytes": 248,
+   "sha256": "76064eb1b1f8c275fbcf80788c59a44c2c95d02b15b7889e02ee45a37a67d55d"
+  },
+  {
+   "referent": 2019,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/cache",
+   "name": "cache",
+   "file": "Eclipse Animator/Container/Core/cache.luau",
+   "bytes": 5617,
+   "sha256": "fad19a1ee34eb3d85e0a22bd906854cdb2bc62f3cac1a26b31cf1b0021bd63bc"
+  },
+  {
+   "referent": 2020,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Main",
+   "name": "Main",
+   "file": "Eclipse Animator/Container/Core/Main.luau",
+   "bytes": 21284,
+   "sha256": "560f31cc718e2c938c01e9439519769af843bdb00d769e78830fb49fa2e27155"
+  },
+  {
+   "referent": 2021,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/ConvertToTable",
+   "name": "ConvertToTable",
+   "file": "Eclipse Animator/Container/Core/ConvertToTable.luau",
+   "bytes": 6743,
+   "sha256": "5978bb9bcc89366c9dfcfe6bd40a8919564905c267aabaf9a3f1f85bfe694ec8"
+  },
+  {
+   "referent": 2022,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Core/Diagnostics",
+   "name": "Diagnostics",
+   "file": "Eclipse Animator/Container/Core/Diagnostics.luau",
+   "bytes": 103,
+   "sha256": "f8665d866e7c82e5e5e7c939b62e20d64e028a308641b5a7e01de8e3c4e6049d"
+  },
+  {
+   "referent": 2024,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/ViewRotate",
+   "name": "ViewRotate",
+   "file": "Eclipse Animator/Container/Animation/ViewRotate.luau",
+   "bytes": 10326,
+   "sha256": "ecc4f6fb6221dd508380cf7e3098a2e97facd13c5bc369c9ec6ff2bec2c183cf"
+  },
+  {
+   "referent": 2025,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Easing",
+   "name": "Easing",
+   "file": "Eclipse Animator/Container/Animation/Easing.luau",
+   "bytes": 9787,
+   "sha256": "23a6285290f3e95c66b9fd386af5ed0fd19d6600f86058c8d71a1612b25b9f2b"
+  },
+  {
+   "referent": 2026,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/ClipboardRows",
+   "name": "ClipboardRows",
+   "file": "Eclipse Animator/Container/Animation/ClipboardRows.luau",
+   "bytes": 2071,
+   "sha256": "071f1412710ded02bfc946334eda1f34d779d039c25bd393b886056d0ebbf6e8"
+  },
+  {
+   "referent": 2027,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/PoseReset",
+   "name": "PoseReset",
+   "file": "Eclipse Animator/Container/Animation/PoseReset.luau",
+   "bytes": 1263,
+   "sha256": "d024ff1f053f951e0d500a7b783ed999c5d6ae9f9aef4008be29a4cc3a195cfb"
+  },
+  {
+   "referent": 2028,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/ClipboardModes",
+   "name": "ClipboardModes",
+   "file": "Eclipse Animator/Container/Animation/ClipboardModes.luau",
+   "bytes": 12067,
+   "sha256": "cbf4afcf053412e9577225a7474bfd90e8a395b306bd2957434c9aa2246dde97"
+  },
+  {
+   "referent": 2029,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/KeyGroups",
+   "name": "KeyGroups",
+   "file": "Eclipse Animator/Container/Animation/KeyGroups.luau",
+   "bytes": 3003,
+   "sha256": "51ce0ef06ecbe6789f529dda07e5d1435f688c60dedf84f3dec0ecf59f987255"
+  },
+  {
+   "referent": 2030,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/PoseSpace",
+   "name": "PoseSpace",
+   "file": "Eclipse Animator/Container/Animation/PoseSpace.luau",
+   "bytes": 5073,
+   "sha256": "b9712037bb27fe3cffdfaab7401bf6c9a18f3ced295d5862e369684d0c4b911e"
+  },
+  {
+   "referent": 2031,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Quaternion",
+   "name": "Quaternion",
+   "file": "Eclipse Animator/Container/Animation/Quaternion.luau",
+   "bytes": 5739,
+   "sha256": "10280d0f25fe6913cd0d14af5db7b0652260bca7e49e2a625a4368beae6dd3f1"
+  },
+  {
+   "referent": 2032,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/RotateCursor",
+   "name": "RotateCursor",
+   "file": "Eclipse Animator/Container/Animation/RotateCursor.luau",
+   "bytes": 9635,
+   "sha256": "e0ec0bfbff4e29d35315c46452459adfed4d64141ba3eada2cbb36574fd1b36b"
+  },
+  {
+   "referent": 2033,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Motion",
+   "name": "Motion",
+   "file": "Eclipse Animator/Container/Animation/Motion.luau",
+   "bytes": 12020,
+   "sha256": "5d87f76f45bac32f28d780c3052a2a4a51823a98dbb471d0ab9796912237c35f"
+  },
+  {
+   "referent": 2034,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/TimingEditor",
+   "name": "TimingEditor",
+   "file": "Eclipse Animator/Container/Animation/TimingEditor.luau",
+   "bytes": 8678,
+   "sha256": "3a8cc6cc51f9e4bf5c3af5421e20bc0d1e841e03149f5105e04649dda53b51ef"
+  },
+  {
+   "referent": 2035,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Interpolation",
+   "name": "Interpolation",
+   "file": "Eclipse Animator/Container/Animation/Interpolation.luau",
+   "bytes": 8223,
+   "sha256": "fef3bdd46246ec157cce0ed9158e393dab1642175a0d94353dfb6d94a7a19ba5"
+  },
+  {
+   "referent": 2036,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/InterpolationPanel",
+   "name": "InterpolationPanel",
+   "file": "Eclipse Animator/Container/Animation/InterpolationPanel.luau",
+   "bytes": 25379,
+   "sha256": "c10bfd626678675fdbfd6d99ce875b0c01afc5c0bd36bc56a0ce6b0131617ddd"
+  },
+  {
+   "referent": 2037,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Extrapolate",
+   "name": "Extrapolate",
+   "file": "Eclipse Animator/Container/Animation/Extrapolate.luau",
+   "bytes": 724,
+   "sha256": "39f664dd80a58bdbeaa00b45c2d0d89e502fe9ee1dade311250f0825cc961727"
+  },
+  {
+   "referent": 2038,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/AnimationPriorities",
+   "name": "AnimationPriorities",
+   "file": "Eclipse Animator/Container/Animation/AnimationPriorities.luau",
+   "bytes": 374,
+   "sha256": "048433e78ba6b3fa2763d30237d459745c82dc7f64bc1b16c6bcc3f6abc71b60"
+  },
+  {
+   "referent": 2039,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/ChannelEasing",
+   "name": "ChannelEasing",
+   "file": "Eclipse Animator/Container/Animation/ChannelEasing.luau",
+   "bytes": 4641,
+   "sha256": "2081afdd05cec70f37cb7c81071ca8e8ba0f980b6e8f442f58555760b40a482b"
+  },
+  {
+   "referent": 2040,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Bezier",
+   "name": "Bezier",
+   "file": "Eclipse Animator/Container/Animation/Bezier.luau",
+   "bytes": 2385,
+   "sha256": "5b33085f835e2ca0ac0317d065cc00e10035c6e6a0bebda0e087d8d3a0bd685e"
+  },
+  {
+   "referent": 2041,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Sequence",
+   "name": "Sequence",
+   "file": "Eclipse Animator/Container/Animation/Sequence.luau",
+   "bytes": 2491,
+   "sha256": "5636dd782e3c7acb69226d84d62857ab3c2398ffb4d54cbdf7fd43922102f263"
+  },
+  {
+   "referent": 2042,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Interp",
+   "name": "Interp",
+   "file": "Eclipse Animator/Container/Animation/Interp.luau",
+   "bytes": 23374,
+   "sha256": "c1b98c88a41c418cf8f285d2ee9656bc33bf08b0bd27f5fe854be6cf6cbc7262"
+  },
+  {
+   "referent": 2043,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Animation/Timing",
+   "name": "Timing",
+   "file": "Eclipse Animator/Container/Animation/Timing.luau",
+   "bytes": 6490,
+   "sha256": "e87f6665ce046f8dddab626b37bd5b5251d19a22d4f6111583f12a9043301b0d"
+  },
+  {
+   "referent": 2045,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Bake",
+   "name": "Bake",
+   "file": "Eclipse Animator/Container/Effects/Bake.luau",
+   "bytes": 29787,
+   "sha256": "9198cfee52bc56dbf39deb33adc24314d80629e88866a43e260f1e65a1743bbf"
+  },
+  {
+   "referent": 2046,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Package",
+   "name": "Package",
+   "file": "Eclipse Animator/Container/Effects/Package.luau",
+   "bytes": 32215,
+   "sha256": "83534324a125862d45392ead9018312cd8814be37eed728e8e08b517e495eb96"
+  },
+  {
+   "referent": 2047,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/NativeVFX",
+   "name": "NativeVFX",
+   "file": "Eclipse Animator/Container/Effects/NativeVFX.luau",
+   "bytes": 11698,
+   "sha256": "55dd2de25855f22e30a415ced92a8bf67d3468f9d82bae29a592bb4e450257c3"
+  },
+  {
+   "referent": 2048,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectSampler",
+   "name": "EffectSampler",
+   "file": "Eclipse Animator/Container/Effects/EffectSampler.luau",
+   "bytes": 7341,
+   "sha256": "9f2b82cda204b02fb4532851623a9597413f6fa9d06c48bc041ca0b775df9536"
+  },
+  {
+   "referent": 2049,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/KeyframeStorage",
+   "name": "KeyframeStorage",
+   "file": "Eclipse Animator/Container/Effects/KeyframeStorage.luau",
+   "bytes": 20275,
+   "sha256": "4d17f7579d301e2d3e30828967e4e7ef88710574142bcbc31f26812799d6a056"
+  },
+  {
+   "referent": 2050,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/PathPreview",
+   "name": "PathPreview",
+   "file": "Eclipse Animator/Container/Effects/PathPreview.luau",
+   "bytes": 4340,
+   "sha256": "9dee661511fa298e6adc08f1387478dd9a8c8799807e0be9143a753d44afe4ad"
+  },
+  {
+   "referent": 2051,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/SubtitleData",
+   "name": "SubtitleData",
+   "file": "Eclipse Animator/Container/Effects/SubtitleData.luau",
+   "bytes": 15349,
+   "sha256": "b336232ec4fd2207562f59944f0a018ee33811fd60030f68cda9a7f2da0ffd7b"
+  },
+  {
+   "referent": 2052,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources",
+   "name": "Sources",
+   "file": "Eclipse Animator/Container/Effects/Sources.luau",
+   "bytes": 2180,
+   "sha256": "f738a7031054b903c35ab1fcb2efcea21b18415dffd8ae8a73561ba02122dc43"
+  },
+  {
+   "referent": 2053,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersCameraProjection",
+   "name": "EclipseExportHelpersCameraProjection",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersCameraProjection.luau",
+   "bytes": 154,
+   "sha256": "7dbf9ce6d8d34b6ef9125e35529aaa612b619c0424f676efbe216e0351aa7e70"
+  },
+  {
+   "referent": 2054,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEclipseVFX",
+   "name": "EclipseExportHelpersEclipseVFX",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEclipseVFX.luau",
+   "bytes": 10788,
+   "sha256": "331b528110b94e47b741517161c69a9e77d5a9714bb05f054fa6f7929e82f1b1"
+  },
+  {
+   "referent": 2055,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEclipseVFXLegacy",
+   "name": "EclipseExportHelpersEclipseVFXLegacy",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEclipseVFXLegacy.luau",
+   "bytes": 269761,
+   "sha256": "d6b808261ddb4060c7717f6720f8ec1b5de7eec2469e9e49ede5c3eb1acdeaa1"
+  },
+  {
+   "referent": 2056,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectLayer",
+   "name": "EclipseExportHelpersEffectLayer",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectLayer.luau",
+   "bytes": 4172,
+   "sha256": "b71298440f77cfd1055c724a8091562c1465c0161f76a79c4f75bcabb508e852"
+  },
+  {
+   "referent": 2057,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectObjects",
+   "name": "EclipseExportHelpersEffectObjects",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectObjects.luau",
+   "bytes": 15010,
+   "sha256": "6be9d02b1851dfc7d7a8f3eb98a7598dd97621e2c49e77b38936a3e5158b85eb"
+  },
+  {
+   "referent": 2058,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectVFXSurface",
+   "name": "EclipseExportHelpersEffectVFXSurface",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEffectVFXSurface.luau",
+   "bytes": 5507,
+   "sha256": "ad832bc2d6e15e0639c3e17dde9c671552f5b1afb4190391ff2d3b8f25ba0180"
+  },
+  {
+   "referent": 2059,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEmitData",
+   "name": "EclipseExportHelpersEmitData",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersEmitData.luau",
+   "bytes": 1920,
+   "sha256": "fed405a08861b4819fbc8503cb4333d223e8fcccee261147e007e9efff1219ee"
+  },
+  {
+   "referent": 2060,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersSubtitleData",
+   "name": "EclipseExportHelpersSubtitleData",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportHelpersSubtitleData.luau",
+   "bytes": 15848,
+   "sha256": "b64ec031989ea8fe877a9445705017d51c9c33609a333bd45a459f7086f5da7e"
+  },
+  {
+   "referent": 2061,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportResourcesEffectAssets",
+   "name": "EclipseExportResourcesEffectAssets",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportResourcesEffectAssets.luau",
+   "bytes": 754,
+   "sha256": "65439126c9aebfd41a31a9184862586da92b48c77915e81022bd557bd2b3e338"
+  },
+  {
+   "referent": 2062,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeCutscene",
+   "name": "EclipseExportRuntimeCutscene",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeCutscene.luau",
+   "bytes": 4773,
+   "sha256": "b00d515f360f8121fa2b68a04dacb0861820f720558389b62f65b957fa7eff38"
+  },
+  {
+   "referent": 2063,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeGeometry",
+   "name": "EclipseExportRuntimeGeometry",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeGeometry.luau",
+   "bytes": 3653,
+   "sha256": "afed7f9472a2810e0742bafee6e681e495e4703f24ae8c2d91a238033aa2f7ea"
+  },
+  {
+   "referent": 2064,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeLetterbox",
+   "name": "EclipseExportRuntimeLetterbox",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimeLetterbox.luau",
+   "bytes": 3492,
+   "sha256": "60bd4715e8bef321aaafda9d5a4449f8f32181e2c874a9942474150b70651165"
+  },
+  {
+   "referent": 2065,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimePlayer",
+   "name": "EclipseExportRuntimePlayer",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimePlayer.luau",
+   "bytes": 29243,
+   "sha256": "393ac89cad30a0a174e635a1acc5246cdeb6718a357f09b0be7ea34049c62a91"
+  },
+  {
+   "referent": 2066,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimePreload",
+   "name": "EclipseExportRuntimePreload",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportRuntimePreload.luau",
+   "bytes": 4383,
+   "sha256": "0ac2fa8d8a54baafcb726e746040951bdb84b862f3f610c87b5e73940fd9cb7f"
+  },
+  {
+   "referent": 2067,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventCleanup",
+   "name": "EclipseExportSubsystemsEventCleanup",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventCleanup.luau",
+   "bytes": 381,
+   "sha256": "7eced79b7b3d1d4822867e44a692e113f68d66868edc005af83cbfe978d6bd09"
+  },
+  {
+   "referent": 2068,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventClock",
+   "name": "EclipseExportSubsystemsEventClock",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventClock.luau",
+   "bytes": 53851,
+   "sha256": "ebddec597e8202110e1739fa77934d94eebc9f2b58c8a52f0d29023bce880e1b"
+  },
+  {
+   "referent": 2069,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventFlipbook",
+   "name": "EclipseExportSubsystemsEventFlipbook",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventFlipbook.luau",
+   "bytes": 8927,
+   "sha256": "60b8062092b4e6f0e5d9b37af516083cb20b2a5bb7ceb3317ef0dc945e75c8a0"
+  },
+  {
+   "referent": 2070,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventOrientation",
+   "name": "EclipseExportSubsystemsEventOrientation",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventOrientation.luau",
+   "bytes": 1275,
+   "sha256": "035ea76e3ff2800f23872053b055c20947007ecf2af6c9f597fe361200e729d1"
+  },
+  {
+   "referent": 2071,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventParticles",
+   "name": "EclipseExportSubsystemsEventParticles",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsEventParticles.luau",
+   "bytes": 22805,
+   "sha256": "a74446f4710fdff900a3ae661c547142faecdf879ab5913f6958a330430a3161"
+  },
+  {
+   "referent": 2072,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsSubtitleRenderer",
+   "name": "EclipseExportSubsystemsSubtitleRenderer",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportSubsystemsSubtitleRenderer.luau",
+   "bytes": 20746,
+   "sha256": "f3c25dcdd187ea00d131c5d0aa508d7f66f6a615b972bd1b0c05246daf6da58f"
+  },
+  {
+   "referent": 2073,
+   "class": "LocalScript",
+   "path": "Eclipse Animator/Container/Effects/Sources/EclipseExportCutsceneHandler",
+   "name": "EclipseExportCutsceneHandler",
+   "file": "Eclipse Animator/Container/Effects/Sources/EclipseExportCutsceneHandler.luau",
+   "bytes": 14489,
+   "sha256": "3740a9bcce8dbd10a7a5fb3b0a87acb45ba359a02377cc9744a6858681645149"
+  },
+  {
+   "referent": 2074,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog",
+   "name": "EffectCatalog",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog.luau",
+   "bytes": 313,
+   "sha256": "ffcac099b7b869c0fe6603c0cee4a090f39a528ef497da650e5cb45637f4aa50"
+  },
+  {
+   "referent": 2075,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors",
+   "name": "EclipseEffectCatalogSingularColors",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors.luau",
+   "bytes": 251,
+   "sha256": "c8d26fea9c26b4c83473701a5e5c5cf9e715a0824e0aab00a582ed30783cc51b"
+  },
+  {
+   "referent": 2076,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors01Camera",
+   "name": "EclipseEffectSingularColors01Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors01Camera.luau",
+   "bytes": 3413,
+   "sha256": "33f3a8c77f07ee7879ce43f108a77f56e5449bd9ca303679f1e441034d09e0e7"
+  },
+  {
+   "referent": 2077,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors02Camera",
+   "name": "EclipseEffectSingularColors02Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors02Camera.luau",
+   "bytes": 3411,
+   "sha256": "23f5290141ecde05956c290152233e8405284f840aae86018538d985ee0b0038"
+  },
+  {
+   "referent": 2078,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors03Camera",
+   "name": "EclipseEffectSingularColors03Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors03Camera.luau",
+   "bytes": 3428,
+   "sha256": "c49f5948b77b14d5fe90083156dc2a274bbbf6f4b7ca9ac24227812c727f7612"
+  },
+  {
+   "referent": 2079,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors04Camera",
+   "name": "EclipseEffectSingularColors04Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogSingularColors/EclipseEffectSingularColors04Camera.luau",
+   "bytes": 3401,
+   "sha256": "b1d011a53edd4d5714838ce7048aa93d49d526a59862ff5db43655ce0178179d"
+  },
+  {
+   "referent": 2080,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting",
+   "name": "EclipseEffectCatalogLighting",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting.luau",
+   "bytes": 269,
+   "sha256": "e2775afef9fcb070d8bf198f6dd3dd5a4d70b628fc2fbb59b57b9b56e47e5797"
+  },
+  {
+   "referent": 2081,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting01Wind",
+   "name": "EclipseEffectLighting01Wind",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting01Wind.luau",
+   "bytes": 3480,
+   "sha256": "bdb8eb654718a34063c157030003f9a00601ba9cfafede7562a784dfab5ac7e7"
+  },
+  {
+   "referent": 2082,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting02Wind",
+   "name": "EclipseEffectLighting02Wind",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting02Wind.luau",
+   "bytes": 1893,
+   "sha256": "581167d67a27d6fcdd77f999dba3d3742ef3cbce5b065ba1854af43ab46a8bc4"
+  },
+  {
+   "referent": 2083,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting03Wind",
+   "name": "EclipseEffectLighting03Wind",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting03Wind.luau",
+   "bytes": 1888,
+   "sha256": "856a593112d1f7fec109475e8512be8a95527b0ea5e487c0fe3bec0408457a2c"
+  },
+  {
+   "referent": 2084,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting04Sunray",
+   "name": "EclipseEffectLighting04Sunray",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting04Sunray.luau",
+   "bytes": 10743,
+   "sha256": "41dcd00f39513f5da14fcc7573fab5a3b2ff3d8edd895ac20cd85771c965108e"
+  },
+  {
+   "referent": 2085,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting05Sunray",
+   "name": "EclipseEffectLighting05Sunray",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogLighting/EclipseEffectLighting05Sunray.luau",
+   "bytes": 5839,
+   "sha256": "37e1a049169d61462bf6bbc2ffd336254fd6c7d2a49903e0ef0dd6aa02fd0fa6"
+  },
+  {
+   "referent": 2086,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors",
+   "name": "EclipseEffectCatalogDoubleColors",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors.luau",
+   "bytes": 243,
+   "sha256": "6302a2b28a559e729edd2e293ee42833df79470fb3a1ea6c44ec9a97f464d77f"
+  },
+  {
+   "referent": 2087,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors01Camera",
+   "name": "EclipseEffectDoubleColors01Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors01Camera.luau",
+   "bytes": 5432,
+   "sha256": "6852ed7a5708b7f21f9c11474fe4abb6fe687249079b2b80641a1a797d7e7236"
+  },
+  {
+   "referent": 2088,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors02Camera",
+   "name": "EclipseEffectDoubleColors02Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors02Camera.luau",
+   "bytes": 5413,
+   "sha256": "fd73d6f8aa3e511ac3552799bcd018a89c3055178c9088406b206d053dd7753e"
+  },
+  {
+   "referent": 2089,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors03Camera",
+   "name": "EclipseEffectDoubleColors03Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors03Camera.luau",
+   "bytes": 5339,
+   "sha256": "8c23a10103fdc2506bc64287c0a11e22b6098348a44060b65352be629e15899e"
+  },
+  {
+   "referent": 2090,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors04Camera",
+   "name": "EclipseEffectDoubleColors04Camera",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogDoubleColors/EclipseEffectDoubleColors04Camera.luau",
+   "bytes": 5414,
+   "sha256": "699b19ce248b493ba1da773677fedf6c09d3ae5168afb1eaa5528d24d32cf14d"
+  },
+  {
+   "referent": 2091,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc",
+   "name": "EclipseEffectCatalogMisc",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc.luau",
+   "bytes": 226,
+   "sha256": "0957409f07c65c3821dda4a5aeb6a0c766df96cfa2e7d1404fd1884fc6bfc61e"
+  },
+  {
+   "referent": 2092,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc01Suspense",
+   "name": "EclipseEffectMisc01Suspense",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc01Suspense.luau",
+   "bytes": 1869,
+   "sha256": "f407aaa3709ec6adcb99a83dfb991d786d34d476b41dcf139cc03d3b14e04b05"
+  },
+  {
+   "referent": 2093,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc02Shock",
+   "name": "EclipseEffectMisc02Shock",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc02Shock.luau",
+   "bytes": 2997,
+   "sha256": "4d9227783fc7f698f7e20e879c3ec013ef282d57ff64bf7794ef2d4b056b1214"
+  },
+  {
+   "referent": 2094,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc03HorizontalFast",
+   "name": "EclipseEffectMisc03HorizontalFast",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc03HorizontalFast.luau",
+   "bytes": 2835,
+   "sha256": "00f3c943a0c7f6ed89942fd27a30568a84caba0b16704965e508c396e80dac50"
+  },
+  {
+   "referent": 2095,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc04VerticalFast",
+   "name": "EclipseEffectMisc04VerticalFast",
+   "file": "Eclipse Animator/Container/Effects/EffectCatalog/EclipseEffectCatalogMisc/EclipseEffectMisc04VerticalFast.luau",
+   "bytes": 2846,
+   "sha256": "6d562fc675ead5af2bd1145201b8220858990a8c9e281dbd6f2db741efcfdce9"
+  },
+  {
+   "referent": 2096,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Events",
+   "name": "Events",
+   "file": "Eclipse Animator/Container/Effects/Events.luau",
+   "bytes": 26135,
+   "sha256": "1bdb6bdc86380289bb2e5d8811d99cb727a9f1d87a2336d1f3c897e3ea52968e"
+  },
+  {
+   "referent": 2097,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Clock",
+   "name": "Clock",
+   "file": "Eclipse Animator/Container/Effects/Clock.luau",
+   "bytes": 49503,
+   "sha256": "18023435465d8db5ffa8ab7013f3071c0dab0f8847498b4b11362848ccbedfa4"
+  },
+  {
+   "referent": 2098,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventDependencies",
+   "name": "EventDependencies",
+   "file": "Eclipse Animator/Container/Effects/EventDependencies.luau",
+   "bytes": 36205,
+   "sha256": "33ae6b20e9bd28b7c5631cab39c6c048a08ab34d5fad5f4ee309bd37105f268d"
+  },
+  {
+   "referent": 2099,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Flipbook",
+   "name": "Flipbook",
+   "file": "Eclipse Animator/Container/Effects/Flipbook.luau",
+   "bytes": 8726,
+   "sha256": "e4d2b67553ac70324b79ed53e81baba04baa2f6e1dbdabbdf44ca5a8578ba79c"
+  },
+  {
+   "referent": 2100,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Frames",
+   "name": "Frames",
+   "file": "Eclipse Animator/Container/Effects/Frames.luau",
+   "bytes": 1390,
+   "sha256": "602f148e0a3e935171b1d61e01a26a4f617103f1a1ab26d795bcb8075ccd769d"
+  },
+  {
+   "referent": 2101,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventIcons",
+   "name": "EventIcons",
+   "file": "Eclipse Animator/Container/Effects/EventIcons.luau",
+   "bytes": 2655,
+   "sha256": "f4be4f7de75f6c16fac2611a93bd742f761c2d0efe3cdd311b54ebcb9cc31dbc"
+  },
+  {
+   "referent": 2102,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Particles",
+   "name": "Particles",
+   "file": "Eclipse Animator/Container/Effects/Particles.luau",
+   "bytes": 22694,
+   "sha256": "5b155806b88dc7fafad65a346b4c6d3cd0adcb80ec5c0fbe31c93a6d24d2399d"
+  },
+  {
+   "referent": 2103,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventPlayback",
+   "name": "EventPlayback",
+   "file": "Eclipse Animator/Container/Effects/EventPlayback.luau",
+   "bytes": 10205,
+   "sha256": "df6dc2e760e84ce351279928909024f9a350e5de542f49ad50c49d7e871319d0"
+  },
+  {
+   "referent": 2104,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventPreview",
+   "name": "EventPreview",
+   "file": "Eclipse Animator/Container/Effects/EventPreview.luau",
+   "bytes": 15868,
+   "sha256": "da5bcb482c640a52f3e91c953aa985336c9f4cf0ec13557d6c17bd8625ee9034"
+  },
+  {
+   "referent": 2105,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/SoundData",
+   "name": "SoundData",
+   "file": "Eclipse Animator/Container/Effects/SoundData.luau",
+   "bytes": 3090,
+   "sha256": "5589d008617ec409015eec0fb3cf4456c1d66f81a9329a226f49f0a5600b8953"
+  },
+  {
+   "referent": 2106,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/SoundEditor",
+   "name": "SoundEditor",
+   "file": "Eclipse Animator/Container/Effects/SoundEditor.luau",
+   "bytes": 7274,
+   "sha256": "d647a2e000dd5d067197b74594c30efc79bcd0595387c5052ff9a098dd2981ee"
+  },
+  {
+   "referent": 2107,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Sounds",
+   "name": "Sounds",
+   "file": "Eclipse Animator/Container/Effects/Sounds.luau",
+   "bytes": 5666,
+   "sha256": "ca8f2e79bdc1847c1917944b8cb59f5a8289ac9979b60d6ec405aa41b5396632"
+  },
+  {
+   "referent": 2108,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/ImagePreviewer",
+   "name": "ImagePreviewer",
+   "file": "Eclipse Animator/Container/Effects/ImagePreviewer.luau",
+   "bytes": 22761,
+   "sha256": "019d212e68b77714e3d4042af7dd321965eb6f4bbc4fe1d00ce316179422972a"
+  },
+  {
+   "referent": 2109,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/LegacyEvents",
+   "name": "LegacyEvents",
+   "file": "Eclipse Animator/Container/Effects/LegacyEvents.luau",
+   "bytes": 3472,
+   "sha256": "5f9a71fa946bda217b84c324ffd257960a57575855dd0640132f049ed1ac3012"
+  },
+  {
+   "referent": 2110,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/BakeSettings",
+   "name": "BakeSettings",
+   "file": "Eclipse Animator/Container/Effects/BakeSettings.luau",
+   "bytes": 1620,
+   "sha256": "875c8ef20426bdd098d8e1799875ed797705330a31cad120f55f8bc74e491cd9"
+  },
+  {
+   "referent": 2111,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EffectPicker",
+   "name": "EffectPicker",
+   "file": "Eclipse Animator/Container/Effects/EffectPicker.luau",
+   "bytes": 12128,
+   "sha256": "38409508841741253a7e3d2d1bf8135a5c4128ec00c007e060a3dbe7184688b9"
+  },
+  {
+   "referent": 2112,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/OnionSkinStatic",
+   "name": "OnionSkinStatic",
+   "file": "Eclipse Animator/Container/Effects/OnionSkinStatic.luau",
+   "bytes": 20362,
+   "sha256": "02489a17d670913ae53247c671aebcaed14d9cad266dee1f55f45b0dfdbcfa5d"
+  },
+  {
+   "referent": 2113,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Effects",
+   "name": "Effects",
+   "file": "Eclipse Animator/Container/Effects/Effects.luau",
+   "bytes": 30252,
+   "sha256": "bf5fab2f9aaa41b0203502015975bca801d87db2efddf920c0614d707c9a517a"
+  },
+  {
+   "referent": 2114,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventTrackList",
+   "name": "EventTrackList",
+   "file": "Eclipse Animator/Container/Effects/EventTrackList.luau",
+   "bytes": 17909,
+   "sha256": "74c305881cd23b97b4b4f7b9a7b3f5d71f3a5e141e608b93811bbb8c79b52adf"
+  },
+  {
+   "referent": 2115,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/SubtitleEditor",
+   "name": "SubtitleEditor",
+   "file": "Eclipse Animator/Container/Effects/SubtitleEditor.luau",
+   "bytes": 31235,
+   "sha256": "ceb2eafe19287adc15a6a13b9cbc6a5bea5a5edc5d04f4c6a8c4847eed87e436"
+  },
+  {
+   "referent": 2116,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Subtitles",
+   "name": "Subtitles",
+   "file": "Eclipse Animator/Container/Effects/Subtitles.luau",
+   "bytes": 10860,
+   "sha256": "c71a980273a7b5948f82659672a9bfaa139010a71e40df5b0bc90c3b6c44308f"
+  },
+  {
+   "referent": 2117,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EventPlaybackInput",
+   "name": "EventPlaybackInput",
+   "file": "Eclipse Animator/Container/Effects/EventPlaybackInput.luau",
+   "bytes": 24152,
+   "sha256": "7c18748ebc02616fe73531bdaa8afd5fb8f08bf5dd2a5c190ab5f4646d17b84f"
+  },
+  {
+   "referent": 2118,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/TimelineKeyframes",
+   "name": "TimelineKeyframes",
+   "file": "Eclipse Animator/Container/Effects/TimelineKeyframes.luau",
+   "bytes": 3951,
+   "sha256": "6c2672de83720ec57752d5f3c88f3337aa0db72449bc42e8d1afc13998e9df19"
+  },
+  {
+   "referent": 2119,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/PropertyKeyframes",
+   "name": "PropertyKeyframes",
+   "file": "Eclipse Animator/Container/Effects/PropertyKeyframes.luau",
+   "bytes": 30046,
+   "sha256": "cfabd775a05b4e6decc39c468aef8f304ad76b5ec2fecadf166bc210d7f99c78"
+  },
+  {
+   "referent": 2120,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/MotionPathKeyframes",
+   "name": "MotionPathKeyframes",
+   "file": "Eclipse Animator/Container/Effects/MotionPathKeyframes.luau",
+   "bytes": 17611,
+   "sha256": "7cd7936903cb3b911b7a43ebe68851234e63193d268277de3b80e2c9435e7928"
+  },
+  {
+   "referent": 2121,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/NodeRenderer",
+   "name": "NodeRenderer",
+   "file": "Eclipse Animator/Container/Effects/NodeRenderer.luau",
+   "bytes": 10577,
+   "sha256": "22395c22ede92122efe837e3dbe784fc42088c0b3a12f667612e319fb7aa018c"
+  },
+  {
+   "referent": 2122,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Upload",
+   "name": "Upload",
+   "file": "Eclipse Animator/Container/Effects/Upload.luau",
+   "bytes": 1540,
+   "sha256": "7b3f8c0c7a193749f50ae449f0635ef56c7e60de12c4800b8bea1cca9b5e3291"
+  },
+  {
+   "referent": 2123,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Audio",
+   "name": "Audio",
+   "file": "Eclipse Animator/Container/Effects/Audio.luau",
+   "bytes": 1766,
+   "sha256": "4aab395f5a9882c2ac1567a36d3a5aa375032e28fc66b3c1f9e56349a861e0b2"
+  },
+  {
+   "referent": 2124,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Surface",
+   "name": "Surface",
+   "file": "Eclipse Animator/Container/Effects/Surface.luau",
+   "bytes": 2379,
+   "sha256": "cd49f1d454665aa8b301e1f3a8e2247cead64d077fe2110f02e6ba63f4df2143"
+  },
+  {
+   "referent": 2125,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Presence",
+   "name": "Presence",
+   "file": "Eclipse Animator/Container/Effects/Presence.luau",
+   "bytes": 9716,
+   "sha256": "e9dfe141f8fb2899c55e986da9a3562ad8aa005701b371a5913d1b7489e68e6a"
+  },
+  {
+   "referent": 2126,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/StudioAudio",
+   "name": "StudioAudio",
+   "file": "Eclipse Animator/Container/Effects/StudioAudio.luau",
+   "bytes": 1776,
+   "sha256": "f19275b7e10d2000a9fa6c3bbfa66a7a069da687cd30aaa13f4cf05ed55bdc2e"
+  },
+  {
+   "referent": 2127,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Style",
+   "name": "Style",
+   "file": "Eclipse Animator/Container/Effects/Style.luau",
+   "bytes": 2844,
+   "sha256": "f6ba769cae5d3d9d2e121eb24efaed22f5d8230154ffde0d9637498413d893ad"
+  },
+  {
+   "referent": 2128,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Realtime",
+   "name": "Realtime",
+   "file": "Eclipse Animator/Container/Effects/Realtime.luau",
+   "bytes": 5897,
+   "sha256": "c2c1d9e1aa0c6d2159602f30db359314d735e79178e5ffffb5aa2bffc558ac74"
+  },
+  {
+   "referent": 2129,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/GifBackground",
+   "name": "GifBackground",
+   "file": "Eclipse Animator/Container/Effects/GifBackground.luau",
+   "bytes": 16642,
+   "sha256": "ffe55462163d045309bb9f4ddcd134a0429e2ff6655dbda616c1ebc9e1b0a3bd"
+  },
+  {
+   "referent": 2130,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/GreasePencil",
+   "name": "GreasePencil",
+   "file": "Eclipse Animator/Container/Effects/GreasePencil.luau",
+   "bytes": 36375,
+   "sha256": "9eadde84dbd8afe2b6189fb67e337cf14c7c946a85c67eed6791d5e2988037a9"
+  },
+  {
+   "referent": 2131,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/LiveSession",
+   "name": "LiveSession",
+   "file": "Eclipse Animator/Container/Effects/LiveSession.luau",
+   "bytes": 44797,
+   "sha256": "242bea5ebb2fc58846fd97fb623ced34b8f42cf9e5fdaf66688ff0d44cf7b51d"
+  },
+  {
+   "referent": 2132,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/Renderer",
+   "name": "Renderer",
+   "file": "Eclipse Animator/Container/Effects/Renderer.luau",
+   "bytes": 20073,
+   "sha256": "ae1e157965502477692a5dae4130afb29dd0aa2384de81cdc8973cd12e0865ff"
+  },
+  {
+   "referent": 2133,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/LocalAudio",
+   "name": "LocalAudio",
+   "file": "Eclipse Animator/Container/Effects/LocalAudio.luau",
+   "bytes": 1364,
+   "sha256": "96246bfc0ccba806dd0e75d1bb5350e88c6063a3d8a88a037aca6af782ac17b6"
+  },
+  {
+   "referent": 2134,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/GifEditor",
+   "name": "GifEditor",
+   "file": "Eclipse Animator/Container/Effects/GifEditor.luau",
+   "bytes": 16769,
+   "sha256": "af28c0f8b37f8924548ad71c3f6dd56ee5fed5e2635592878ea72ad3359ff5d2"
+  },
+  {
+   "referent": 2135,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Effects/EasingStyles",
+   "name": "EasingStyles",
+   "file": "Eclipse Animator/Container/Effects/EasingStyles.luau",
+   "bytes": 3228,
+   "sha256": "91bb97a2760f28f5ca3161b1884d17d89d2f19e660e85c017168dd127f203cc5"
+  },
+  {
+   "referent": 2137,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/UserInputService",
+   "name": "UserInputService",
+   "file": "Eclipse Animator/Container/Input/UserInputService.luau",
+   "bytes": 43671,
+   "sha256": "b0393511f3e6391503521b8489ead9850c68a51ba38a658faae9d37f2e727adf"
+  },
+  {
+   "referent": 2138,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/Keybinds",
+   "name": "Keybinds",
+   "file": "Eclipse Animator/Container/Input/Keybinds.luau",
+   "bytes": 14162,
+   "sha256": "527c401f698da7ca7a0144d589323b74ae91e5d623e8028b89826cb230b351bb"
+  },
+  {
+   "referent": 2139,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/Cursor",
+   "name": "Cursor",
+   "file": "Eclipse Animator/Container/Input/Cursor.luau",
+   "bytes": 2746,
+   "sha256": "769edabfd585bff4eeb4caa45a5ca2c27708b50be14fb77ecabaf795c8eb0956"
+  },
+  {
+   "referent": 2140,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/Shortcuts",
+   "name": "Shortcuts",
+   "file": "Eclipse Animator/Container/Input/Shortcuts.luau",
+   "bytes": 16710,
+   "sha256": "935548e5d6446b37740668e883a3009cef1b1dcb187247c08d60d124b13d26fc"
+  },
+  {
+   "referent": 2141,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/Zoom",
+   "name": "Zoom",
+   "file": "Eclipse Animator/Container/Input/Zoom.luau",
+   "bytes": 1611,
+   "sha256": "d9672ec7ed0c4584468bb2f8e37231650dce02fa38b3279d794a3136c7bdc2b6"
+  },
+  {
+   "referent": 2142,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/EditShortcuts",
+   "name": "EditShortcuts",
+   "file": "Eclipse Animator/Container/Input/EditShortcuts.luau",
+   "bytes": 5470,
+   "sha256": "fab50544a31ee1f27e9cdd2411c20180984f1490616c89e9cf1db11596e0e623"
+  },
+  {
+   "referent": 2143,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/KeybindActions",
+   "name": "KeybindActions",
+   "file": "Eclipse Animator/Container/Input/KeybindActions.luau",
+   "bytes": 15200,
+   "sha256": "dc4c390d6edb832b48caafa7bff1ed1d01ac98a827e617e3cd6a532230c5c40d"
+  },
+  {
+   "referent": 2144,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/InputRouter",
+   "name": "InputRouter",
+   "file": "Eclipse Animator/Container/Input/InputRouter.luau",
+   "bytes": 46053,
+   "sha256": "ed15117e33ef4ba5c7c29169b8d6d4147d3284fefdd93a986eef0418c722a054"
+  },
+  {
+   "referent": 2145,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/KeybindsEditor",
+   "name": "KeybindsEditor",
+   "file": "Eclipse Animator/Container/Input/KeybindsEditor.luau",
+   "bytes": 13224,
+   "sha256": "a811222ba3734c0a9d87e1177fdcc796d0d57bf2042d17c28a77dec1a396b1c9"
+  },
+  {
+   "referent": 2146,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/RotationInput",
+   "name": "RotationInput",
+   "file": "Eclipse Animator/Container/Input/RotationInput.luau",
+   "bytes": 1193,
+   "sha256": "cf5333a0aee6abf5aa6637b7d9d330106b450e6885950290be44082b9adf29db"
+  },
+  {
+   "referent": 2147,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/NumericInput",
+   "name": "NumericInput",
+   "file": "Eclipse Animator/Container/Input/NumericInput.luau",
+   "bytes": 4933,
+   "sha256": "546d8b417143cd1743dd6bb42991075331ee9b050b3a4027286cf130c7ff5d98"
+  },
+  {
+   "referent": 2148,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Input/Resize",
+   "name": "Resize",
+   "file": "Eclipse Animator/Container/Input/Resize.luau",
+   "bytes": 6250,
+   "sha256": "bd55208f02ed4d6ecb23e7863a36cdf5a87914ee89a1df319632b5ebc0013a1f"
+  },
+  {
+   "referent": 2150,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Picker",
+   "name": "Picker",
+   "file": "Eclipse Animator/Container/Interface/Picker.luau",
+   "bytes": 30363,
+   "sha256": "afc9b393d99d903b30b919236c488d75cf816fa9de2745b8d45accabb43a2ddf"
+  },
+  {
+   "referent": 2151,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/ModifierPanel",
+   "name": "ModifierPanel",
+   "file": "Eclipse Animator/Container/Interface/ModifierPanel.luau",
+   "bytes": 60646,
+   "sha256": "a3622e4049e715764aeb53012417dba6e885f6bbbea6704e48b060cdaf043f13"
+  },
+  {
+   "referent": 2152,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/LibraryIcons",
+   "name": "LibraryIcons",
+   "file": "Eclipse Animator/Container/Interface/LibraryIcons.luau",
+   "bytes": 979,
+   "sha256": "6d5059c62b1152ebd85e023f5fc3462ce12ecadbffa5a05e3c07bac108555d41"
+  },
+  {
+   "referent": 2153,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Tool",
+   "name": "Tool",
+   "file": "Eclipse Animator/Container/Interface/Tool.luau",
+   "bytes": 12887,
+   "sha256": "1b0f3364fcf4e1a96722509ccb201cb124dac4893085bbf58bafc84f9de4d709"
+  },
+  {
+   "referent": 2154,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Alert",
+   "name": "Alert",
+   "file": "Eclipse Animator/Container/Interface/Alert.luau",
+   "bytes": 1358,
+   "sha256": "670cbcccf2f7d5c50330dd6e60cbcdf53288b4763377650e7097de359b3a5672"
+  },
+  {
+   "referent": 2155,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Confirm",
+   "name": "Confirm",
+   "file": "Eclipse Animator/Container/Interface/Confirm.luau",
+   "bytes": 5278,
+   "sha256": "9a657d85a6799cea186c004979105a0d2027c93a7151a40d31487ab597d02b30"
+  },
+  {
+   "referent": 2156,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Drag",
+   "name": "Drag",
+   "file": "Eclipse Animator/Container/Interface/Drag.luau",
+   "bytes": 2344,
+   "sha256": "a111c9dfa4e593feddea5bb3e48a97ccafcccc2f65f674a056aaa14a0b9f9c73"
+  },
+  {
+   "referent": 2157,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/DropdownBuilder",
+   "name": "DropdownBuilder",
+   "file": "Eclipse Animator/Container/Interface/DropdownBuilder.luau",
+   "bytes": 17831,
+   "sha256": "a2697dac891b8eb11f48215d480207c2ce74cfc0dd32c189ed419f6230ec2b65"
+  },
+  {
+   "referent": 2158,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/HoverDialog",
+   "name": "HoverDialog",
+   "file": "Eclipse Animator/Container/Interface/HoverDialog.luau",
+   "bytes": 9652,
+   "sha256": "abc1a4403b04b03d1f6a434a6875c5e38a71bd68d7fc9b92c5bdb33d29d80991"
+  },
+  {
+   "referent": 2159,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Notification",
+   "name": "Notification",
+   "file": "Eclipse Animator/Container/Interface/Notification.luau",
+   "bytes": 6383,
+   "sha256": "e23bf97b4ef22d71a14b64201f3a91e3be65e61de743ea4609d9802458d127e5"
+  },
+  {
+   "referent": 2160,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/SizeableWindows",
+   "name": "SizeableWindows",
+   "file": "Eclipse Animator/Container/Interface/SizeableWindows.luau",
+   "bytes": 9437,
+   "sha256": "0007e75459f3b8fc14f305fdb0dabca0e9ebf5bee7abd894751240ee5695c6c9"
+  },
+  {
+   "referent": 2161,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Chrome",
+   "name": "Chrome",
+   "file": "Eclipse Animator/Container/Interface/Chrome.luau",
+   "bytes": 5545,
+   "sha256": "4c0e361b0c7bee58c08df694acbe2351f426b487911fcd8ca6a1fca43d5e45b4"
+  },
+  {
+   "referent": 2162,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/WindowFX",
+   "name": "WindowFX",
+   "file": "Eclipse Animator/Container/Interface/WindowFX.luau",
+   "bytes": 8709,
+   "sha256": "44d3220e10c1b1c8359b772d47aa26763a15c1d1c7c2b55ac63b4408fa29372b"
+  },
+  {
+   "referent": 2163,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Buttons",
+   "name": "Buttons",
+   "file": "Eclipse Animator/Container/Interface/Buttons.luau",
+   "bytes": 11487,
+   "sha256": "edc243b1ef712d007aa5ce94eac6d892b04ab5ed242995333dc271d53f891633"
+  },
+  {
+   "referent": 2164,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Customize",
+   "name": "Customize",
+   "file": "Eclipse Animator/Container/Interface/Customize.luau",
+   "bytes": 44718,
+   "sha256": "8481a59fd3accf85b066aadb560cb3d79870af9df897714145155b92e0257c15"
+  },
+  {
+   "referent": 2165,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Catalog",
+   "name": "Catalog",
+   "file": "Eclipse Animator/Container/Interface/Catalog.luau",
+   "bytes": 17833,
+   "sha256": "e5c70c094423cf763a9d7025afd040367903065393d2b31082c5b6b78e7a39f7"
+  },
+  {
+   "referent": 2166,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/HelperMenu",
+   "name": "HelperMenu",
+   "file": "Eclipse Animator/Container/Interface/HelperMenu.luau",
+   "bytes": 16694,
+   "sha256": "80b978ee92823526db9fd0015704010131ffd1ba790f151f82e28176ac1402ab"
+  },
+  {
+   "referent": 2167,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/MainMenu",
+   "name": "MainMenu",
+   "file": "Eclipse Animator/Container/Interface/MainMenu.luau",
+   "bytes": 15570,
+   "sha256": "b0e77ab9049a6da0c4585752d1e13867f24d3a175dc20b82c07a9322abef6151"
+  },
+  {
+   "referent": 2168,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/MenuBar",
+   "name": "MenuBar",
+   "file": "Eclipse Animator/Container/Interface/MenuBar.luau",
+   "bytes": 11927,
+   "sha256": "e4ad379e92417a8184173e823d57e4a1149c4681da8d4f51ce2a2465e4fb3298"
+  },
+  {
+   "referent": 2169,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/View",
+   "name": "View",
+   "file": "Eclipse Animator/Container/Interface/View.luau",
+   "bytes": 6826,
+   "sha256": "357d9f71aac1ea21d1d174edef95b8015044b345ee71c2753883b3adbd8edaca"
+  },
+  {
+   "referent": 2170,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/DropdownConfigs",
+   "name": "DropdownConfigs",
+   "file": "Eclipse Animator/Container/Interface/DropdownConfigs.luau",
+   "bytes": 15152,
+   "sha256": "8794e6747d74717d6ebd1dbf29f6df75ab10a424cc7b90c02faf2b034ca4bba6"
+  },
+  {
+   "referent": 2171,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/ThemeConfig",
+   "name": "ThemeConfig",
+   "file": "Eclipse Animator/Container/Interface/ThemeConfig.luau",
+   "bytes": 16709,
+   "sha256": "ad936a55e453cef6e66411bade5269f3a0b1274a1f59c422cd29555f59d48590"
+  },
+  {
+   "referent": 2172,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/AboutEclipse",
+   "name": "AboutEclipse",
+   "file": "Eclipse Animator/Container/Interface/AboutEclipse.luau",
+   "bytes": 12696,
+   "sha256": "1044d2b28f04dff1929c1f523ec0c3c5319c03f5c4f44ae7b05ad1564358a663"
+  },
+  {
+   "referent": 2173,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/FileTools",
+   "name": "FileTools",
+   "file": "Eclipse Animator/Container/Interface/FileTools.luau",
+   "bytes": 30531,
+   "sha256": "3b4dfed0521bc9de1fead0252cb973f8021700ae7e4104b78daef06c1de719a5"
+  },
+  {
+   "referent": 2174,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Window",
+   "name": "Window",
+   "file": "Eclipse Animator/Container/Interface/Window.luau",
+   "bytes": 36684,
+   "sha256": "bd357271a7d465ebbcabea7f28afa65a10ba2f966ea8f153e934addcb96a7e5b"
+  },
+  {
+   "referent": 2175,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/fill",
+   "name": "fill",
+   "file": "Eclipse Animator/Container/Interface/fill.luau",
+   "bytes": 29884,
+   "sha256": "15b36d124f2babf57cbb33f25b7506ab0018f35017a0c453a45434bfd1c18127"
+  },
+  {
+   "referent": 2176,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Membership",
+   "name": "Membership",
+   "file": "Eclipse Animator/Container/Interface/Membership.luau",
+   "bytes": 4307,
+   "sha256": "af45531aef1096497764c7497ac56c2ac9303b1b8e00e974d3aa913dcd1a9387"
+  },
+  {
+   "referent": 2177,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Theme",
+   "name": "Theme",
+   "file": "Eclipse Animator/Container/Interface/Theme.luau",
+   "bytes": 37262,
+   "sha256": "9247ca014f6930221bef788feb307c5dbe5b3deef70a7690e0b5d51531d5532c"
+  },
+  {
+   "referent": 2178,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/SelectionMenu",
+   "name": "SelectionMenu",
+   "file": "Eclipse Animator/Container/Interface/SelectionMenu.luau",
+   "bytes": 36084,
+   "sha256": "1f19a4bee6bcc4fc9e380c91386fea5c7ff92cfdea3c8c121238c02d79f1f89b"
+  },
+  {
+   "referent": 2179,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/VideoWindow",
+   "name": "VideoWindow",
+   "file": "Eclipse Animator/Container/Interface/VideoWindow.luau",
+   "bytes": 4269,
+   "sha256": "7083103348908ed7d3378ed6849f369294b3a824efe94320ef98216130916e98"
+  },
+  {
+   "referent": 2180,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/PickerAlias",
+   "name": "PickerAlias",
+   "file": "Eclipse Animator/Container/Interface/PickerAlias.luau",
+   "bytes": 121,
+   "sha256": "5e5b6590abbb2a226e893e6fb67d7707ebc62c4e06140c83613cc116882ff874"
+  },
+  {
+   "referent": 2181,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/ViewportSelection",
+   "name": "ViewportSelection",
+   "file": "Eclipse Animator/Container/Interface/ViewportSelection.luau",
+   "bytes": 6812,
+   "sha256": "dda93a203ec4b99c49c82def107ffda39d1df1514abfb13c06e5e2d0715fcad0"
+  },
+  {
+   "referent": 2182,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/UIHelpersModule",
+   "name": "UIHelpersModule",
+   "file": "Eclipse Animator/Container/Interface/UIHelpersModule.luau",
+   "bytes": 3114,
+   "sha256": "c54ac68240427fa4eb9a48e75997e001699ae3bb05db2d0189ab9ac7e7fc9638"
+  },
+  {
+   "referent": 2183,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/AnimatorLayout",
+   "name": "AnimatorLayout",
+   "file": "Eclipse Animator/Container/Interface/AnimatorLayout.luau",
+   "bytes": 5683,
+   "sha256": "10e02836e3341e093ac92f41d9ddcbc898616e53326636d32f10feee803493fa"
+  },
+  {
+   "referent": 2184,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/UI",
+   "name": "UI",
+   "file": "Eclipse Animator/Container/Interface/UI.luau",
+   "bytes": 7936,
+   "sha256": "5dffa002fd21805fae01a0b78465323a44621bc3ab259ba9e0a426055bcdb58c"
+  },
+  {
+   "referent": 2185,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/UI_CONFIG",
+   "name": "UI_CONFIG",
+   "file": "Eclipse Animator/Container/Interface/UI_CONFIG.luau",
+   "bytes": 877,
+   "sha256": "47d4c4006250961c61ddf00a83156dd506d069157ff229a7158eaa4141957d45"
+  },
+  {
+   "referent": 2186,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Interface/Layout",
+   "name": "Layout",
+   "file": "Eclipse Animator/Container/Interface/Layout.luau",
+   "bytes": 10851,
+   "sha256": "27a208fae25eefbde0a521fe05b3c301f9d4c6427665924894fe338c5fc24a5b"
+  },
+  {
+   "referent": 2188,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/M",
+   "name": "M",
+   "file": "Eclipse Animator/Container/Utility/M.luau",
+   "bytes": 11553,
+   "sha256": "a7d45fc1529ae721f207b8cc59bfb119067b8792d0b39c4f051bd0452d9ca1a6"
+  },
+  {
+   "referent": 2189,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/Animation",
+   "name": "Animation",
+   "file": "Eclipse Animator/Container/Utility/Animation.luau",
+   "bytes": 22403,
+   "sha256": "4a80e9b5857508109a1d32dd29bf51e1a5fa979caf6bc85e220332e199ebc148"
+  },
+  {
+   "referent": 2190,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/Stub260",
+   "name": "Stub260",
+   "file": "Eclipse Animator/Container/Utility/Stub260.luau",
+   "bytes": 129,
+   "sha256": "7fe9d60bd7eb9c2e705d1f0d5651a4705f7ce028f425c53571447ec6a5b6d1bf"
+  },
+  {
+   "referent": 2191,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/Stub261",
+   "name": "Stub261",
+   "file": "Eclipse Animator/Container/Utility/Stub261.luau",
+   "bytes": 129,
+   "sha256": "7fe9d60bd7eb9c2e705d1f0d5651a4705f7ce028f425c53571447ec6a5b6d1bf"
+  },
+  {
+   "referent": 2192,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/Stub337",
+   "name": "Stub337",
+   "file": "Eclipse Animator/Container/Utility/Stub337.luau",
+   "bytes": 118,
+   "sha256": "6b8accc75bdacc359b13a1342e20646a37a84d57842d0ea45cb697811b6bb3a1"
+  },
+  {
+   "referent": 2193,
+   "class": "ModuleScript",
+   "path": "Eclipse Animator/Container/Utility/Transport",
+   "name": "Transport",
+   "file": "Eclipse Animator/Container/Utility/Transport.luau",
+   "bytes": 50807,
+   "sha256": "360061e80e6a88fd79dfd8d6b32e0ef8a7e15a36127b156d4105574de9d6571c"
+  }
+ ]
+}

@@ -1,3 +1,7 @@
+<div align="center">
+
+<img src="assets/logo.png" alt="Eclipse Animator" width="100%">
+
 # Eclipse Animator
 
 **A next-generation animation suite for Roblox Studio — built for animators who outgrew the basics.**
@@ -7,6 +11,9 @@
 ![Type](https://img.shields.io/badge/Type-Animation%20Plugin-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Pre--Paid%20Build-purple?style=for-the-badge)
 ![Price](https://img.shields.io/badge/Price-Free-success?style=for-the-badge)
+![Source](https://img.shields.io/badge/Source-362%20unpacked%20scripts-blueviolet?style=for-the-badge)
+
+</div>
 
 ---
 
@@ -16,13 +23,20 @@
 >
 > It is preserved here in the exact state it existed in when it was still freely available: one `.rbxm` plugin file, no license server, no account checks, no microtransactions. Everything loads straight into Roblox Studio and works out of the box.
 >
-> The goal of this repository is simple — keep the original free release accessible to the animation community that helped the project grow in the first place.
+> The goal of this repository is simple — keep the original free release accessible to the animation community that helped the project grow in the first place. As well as the original file, the repository now carries the plugin's complete source, unpacked and editable, so the build can be studied and changed instead of just installed.
+
+> **The build is not encrypted.** It is a standard Roblox binary model (`.rbxm`)
+> with LZ4-compressed chunks — that compression is all "the encryption" ever was.
+> Its 362 scripts have been unpacked into plain, editable `.luau` files under
+> [`src/`](#editable-source), and `tools/` can pack them back into a working
+> plugin. See [Editable Source](#editable-source).
 
 ---
 
 ## Table of Contents
 
 - [About Eclipse Animator](#about-eclipse-animator)
+- [Editable Source](#editable-source)
 - [Plugin at a Glance](#plugin-at-a-glance)
 - [Features](#features)
 - [Installation](#installation)
@@ -52,6 +66,68 @@ It brings the workflow animators actually want into one window:
 - Export paths that take your animation from the timeline all the way into a shipped game.
 
 Whether you are making combat animations, cinematics, cutscenes, emotes, or full character performances, Eclipse Animator is built to handle the entire pipeline without leaving Roblox Studio.
+
+---
+
+## Editable Source
+
+The plugin in this repository is often described as "encrypted", but it never
+was: a `.rbxm` is Roblox's binary model format and its chunks are simply
+LZ4-compressed. This repository now also ships the **whole plugin unpacked into
+readable, editable files**, plus the tools that do the unpacking and the
+repacking.
+
+| Path | What it is |
+| :--- | :--- |
+| `src/` | all 362 `Script` / `LocalScript` / `ModuleScript` sources as plain `.luau` files (6.0 MB) in a tree that mirrors the plugin hierarchy — real Luau, comments and formatting intact |
+| `src/manifest.json` | the map between every file and the model: referent, class, in-plugin path, size, SHA-256 |
+| `src/_tree.txt` | the complete instance tree — all 2,195 instances with their class names |
+| `assets/logo.png` | the project logo — the plugin's own artwork (`rbxassetid://126656292244944`, the mark its About window and header use), recovered at 1024×1024 from the author's public Eclipse Video build, plus `assets/icon.png` as a square icon |
+| `tools/rbxm.py` | a dependency-free reader/writer for the binary model format: every chunk type, every property type, LZ4 and ZSTD |
+| `tools/unpack.py` | `.rbxm` → editable source tree |
+| `tools/repack.py` | edited source tree → `.rbxm` |
+| `tools/README.md` | full usage notes |
+
+The sources are grouped the same way the plugin groups them, for example:
+
+```
+src/Eclipse Animator/
+├── Container/
+│   ├── Animation/     Core/       Effects/    Geometry/
+│   ├── Input/         Interface/  Rigging/    Shared/
+│   ├── Storage/       Timeline/   Utility/
+│   └── (Project, Export, Recovery, Layers, RigTraversal, …)
+├── manifest.json
+└── _tree.txt
+```
+
+### Rebuild the plugin
+
+```bash
+# edit anything under src/ ...
+
+python3 tools/repack.py                 # writes EclipseAnimator.rbxm
+python3 tools/repack.py --verify-only    # just list the scripts that differ
+python3 tools/repack.py --full           # re-encode every chunk, not only sources
+```
+
+`repack.py` re-encodes only the `Source` chunks that changed and copies every
+other chunk out of the original file byte-for-byte, so editing one script can
+never disturb the rest of the model. It then reads its own output back and
+verifies all 362 scripts, the instance hierarchy and the shared-string table
+before reporting success. Repacking an untouched `src/` reproduces the original
+file byte-for-byte.
+
+To inspect the rest of the model as text — UI sizes, colors, CFrames, keyframe
+tables, everything — dump every property of every instance:
+
+```bash
+python3 tools/unpack.py Eclipse-Animator-inspect.rbxm src --model-json
+# -> src/_model.json
+```
+
+Install the rebuilt `EclipseAnimator.rbxm` exactly as described in
+[Installation](#installation).
 
 ---
 
@@ -134,7 +210,8 @@ Eclipse Animator ships as a single `.rbxm` file and installs as a **local plugin
 
 ### Method 1 — Local plugin folder (recommended)
 
-1. Download the `.rbxm` file from this repository.
+1. Download `Eclipse-Animator-inspect.rbxm` from this repository (or build
+   `EclipseAnimator.rbxm` from `src/` with `tools/repack.py`).
 2. Open your Roblox Studio plugins folder:
 
    **Windows**
@@ -151,11 +228,10 @@ Eclipse Animator ships as a single `.rbxm` file and installs as a **local plugin
 
    If the `Plugins` folder does not exist, create it manually.
 
-3. Copy the `.rbxm` file into that folder.
+3. Copy the `.rbxm` file into that folder — `Eclipse-Animator-inspect.rbxm` as
+   downloaded, or `EclipseAnimator.rbxm` if you rebuilt it from source.
 4. Restart Roblox Studio completely.
 5. Eclipse Animator appears in the **Plugins** tab of the ribbon.
-
-<!-- If your .rbxm file has a different name, update the steps above to match the file you actually ship in this repository. -->
 
 ### Method 2 — Insert from file
 
@@ -217,8 +293,6 @@ The default bindings are listed below, and every one of them can be remapped fro
 | Simulate physics | Configurable in settings |
 | Toggle camera preview | Configurable in settings |
 
-<!-- Confirm each default binding against your build before publishing, and adjust the table if it differs. -->
-
 ---
 
 ## Compatibility and Requirements
@@ -238,15 +312,25 @@ The default bindings are listed below, and every one of them can be remapped fro
 
 ```
 .
-├── EclipseAnimator.rbxm     # The plugin file — install this
-├── README.md                # This documentation
-└── LICENSE                  # Usage terms
+├── Eclipse-Animator-inspect.rbxm   # The plugin file — install this (Roblox binary model)
+├── assets/
+│   ├── logo.png                    # Project logo banner, shown at the top of this README
+│   └── icon.png                    # Square logo mark
+├── src/                            # The plugin, unpacked and editable
+│   ├── Eclipse Animator/           # 362 .luau scripts mirroring the plugin tree
+│   ├── manifest.json               # referent ⇄ file map with checksums
+│   └── _tree.txt                   # the full instance tree (2,195 instances)
+├── tools/                          # Unpack / repack toolkit
+│   ├── rbxm.py                     # Binary model reader + writer
+│   ├── unpack.py                   # .rbxm  →  src/
+│   ├── repack.py                   # src/   →  .rbxm
+│   └── README.md                   # Tool documentation
+├── README.md                       # This documentation
+└── LICENSE                         # Usage terms
 ```
 
-<!--
-Replace the tree above with your real file names and folders.
-If you also ship screenshots, add a screenshots/ or assets/ folder and list it here.
--->
+Running `python3 tools/repack.py` after editing `src/` writes
+`EclipseAnimator.rbxm`, the installable plugin build.
 
 ---
 
@@ -305,7 +389,7 @@ Yes. Animations can be exported for in-game use, and the ModuleScript exporter l
 <details>
 <summary><strong>Is it safe to install?</strong></summary>
 
-The plugin is a `.rbxm` model file installed locally through Studio's own plugin system. If you want full transparency, use Method 2 in the installation section to inspect its contents before saving it as a local plugin.
+Yes. It is a `.rbxm` model file installed locally through Studio's own plugin system, and it contains no obfuscated code — every script is plain Luau, unpacked for you under [`src/`](#editable-source). You can also use Method 2 below to inspect it inside Studio before saving it as a local plugin.
 </details>
 
 <details>

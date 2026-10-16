@@ -1,0 +1,6 @@
+# Python bytecode from tools/
+__pycache__/
+*.pyc
+
+# Build output of tools/repack.py (regenerate with: python3 tools/repack.py)
+EclipseAnimator.rbxm

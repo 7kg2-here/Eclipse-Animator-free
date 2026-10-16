@@ -1,0 +1,32 @@
+Eclipse Animator — pre-paid release (archive license)
+======================================================
+
+This repository archives the build of Eclipse Animator that was published
+before the plugin became a paid product, together with the unpacked Luau source
+and the small Python tools used to unpack and repack it.
+
+You may:
+
+  * install this build and use it in your own Roblox projects;
+  * read, study, modify and rebuild the sources under `src/` for your own use;
+  * copy and share this repository, in whole or in part, for free.
+
+You may not:
+
+  * resell this build, the unpacked sources, or a modified version of them;
+  * redistribute them behind any kind of paywall, key system, or
+    "premium" gate;
+  * present the work as your own paid product.
+
+The plugin, its name and its artwork remain the property of their original
+author. This repository is an archive of a past release and is not affiliated
+with, or supported by, any current distribution of Eclipse Animator. If you are
+the rights holder and would like something here changed or removed, open an
+issue and it will be handled.
+
+Everything in this repository is provided "as is", without warranty of any
+kind, express or implied, including but not limited to the warranties of
+merchantability, fitness for a particular purpose and non-infringement. The
+maintainers of this repository are not responsible for any loss of data,
+project corruption, or other damage arising from its use. Always keep backups
+of your places and animation files before installing any plugin.
