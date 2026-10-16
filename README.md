@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" width="160" alt="Eclipse Animator logo" />
+<img src="assets/logo-official-1024.png" width="160" alt="Eclipse Animator logo" />
 
 # Eclipse Animator — Free Release
 
@@ -259,7 +259,8 @@ Confirm bindings in the plugin settings panel, as they can be remapped.
 ```
 .
 ├── assets/
-│   ├── logo.png                        # Official logo (Discord server icon)
+│   ├── logo-official-1024.png            # Official logo (Discord server icon, used in README)
+│   ├── logo.png                        # Same official logo
 │   ├── logo-plugin.png                 # Original in-plugin header icon (transparent)
 │   ├── logo-crescent.png               # Original toolbar brand mark
 │   └── logo-concept.svg                # Alternative concept art
