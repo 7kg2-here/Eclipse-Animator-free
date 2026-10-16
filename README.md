@@ -259,8 +259,9 @@ Confirm bindings in the plugin settings panel, as they can be remapped.
 ```
 .
 ├── assets/
-│   ├── logo.png                        # Original Eclipse logo (toolbar brand mark)
-│   ├── logo-plugin.png                 # Original in-plugin header icon
+│   ├── logo.png                        # Official logo (Discord server icon)
+│   ├── logo-plugin.png                 # Original in-plugin header icon (transparent)
+│   ├── logo-crescent.png               # Original toolbar brand mark
 │   └── logo-concept.svg                # Alternative concept art
 ├── Eclipse-Animator-inspect.rbxmx      # The plugin file. Install this.
 ├── README.md                           # This documentation
